@@ -1,6 +1,13 @@
-# NeutrinoShowcase
+# Neutrino Seed
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.1.
+## NPM Setup
+
+We use scoped packages from [npm-registry.whitewater.ibm.com](https://npm.whitewater.ibm.com/), so you will need access
+to this registry. Please follow
+[this document](https://github.ibm.com/Whitewater/npm-enterprise#option-2-using-npm-enterprise-for-private-packages-only) to login,
+this will create/add to your `~/.npmrc` file the token required for access.
+
+`npm login --registry=https://npm-registry.whitewater.ibm.com --scope=@neutrino`
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

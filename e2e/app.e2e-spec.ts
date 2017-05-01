@@ -1,10 +1,10 @@
-import { NeutrinoShowcasePage } from './app.po';
+import { NeutrinoSeedPage } from './app.po';
 
-describe('neutrino-showcase App', () => {
-  let page: NeutrinoShowcasePage;
+describe('neutrino-seed App', () => {
+  let page: NeutrinoSeedPage;
 
   beforeEach(() => {
-    page = new NeutrinoShowcasePage();
+    page = new NeutrinoSeedPage();
   });
 
   it('should display message saying app works', () => {
