@@ -1,11 +1,11 @@
 <ng-template #listTpl let-item="item">
-  <span *ngIf="item.icon"><cdl-glyphicon icon="{{item.icon}}" size="md"></cdl-glyphicon></span>
+  <span *ngIf="item.icon"><n-icon icon="{{item.icon}}" size="md"></n-icon></span>
   <span class="side-nav-item" [routerLink]="item.link">{{item.content}}</span>
 </ng-template>
 
 
-<cdl-top-nav [brand]="topNavBrand" [badge]="topNavBadge" [sticky]="true" >
-  <cdl-hamburger (onClick)="onClick($event)" hamburger></cdl-hamburger>
+<n-top-nav [brand]="topNavBrand" [badge]="topNavBadge" [fixed]="true" >
+  <n-hamburger (onClick)="onClick($event)" hamburger></n-hamburger>
   <div title>
 			<a class="top-nav-heading top-nav-link-item fl" href="#">
 				<h1 class="top-nav-brand">
@@ -16,28 +16,80 @@
 				{{topNavTitle}}
 			</span>
 		</div>
-</cdl-top-nav>
+</n-top-nav>
 
-<cdl-side-nav [open]="sideNavOpen" class="side-nav" [sticky]="true">
-  <cdl-side-nav-item routerLink="/home">
-			<cdl-glyphicon class="side-nav-glyph" icon="Alert" size="md"></cdl-glyphicon>
-			<span class="side-nav-item">Home</span>
-  </cdl-side-nav-item>
-  <cdl-side-nav-item>
-    <cdl-glyphicon class="side-nav-glyph" icon="Alert" size="md"></cdl-glyphicon>
+<n-side-nav class="side-nav" [open]="sideNavOpen">
+  <n-side-nav-item routerLink="/table" tabindex="-1">
+    <n-icon
+      class="side-nav-glyph"
+      icon="lightbulb"
+      size="md">
+    </n-icon>
+    <span class="side-nav-item">Understand</span>
+  </n-side-nav-item>
+  <n-side-nav-item>
+    <n-icon
+      class="side-nav-glyph"
+      icon="gears"
+      size="md">
+    </n-icon>
     <span class="side-nav-item">More</span>
-    <cdl-side-nav-item>
-        <cdl-glyphicon class="side-nav-glyph" icon="Alert" size="md"></cdl-glyphicon>
-        <span class="side-nav-item">Content</span>
-    </cdl-side-nav-item>
-  </cdl-side-nav-item>
-  <cdl-side-nav-item>
-    <span class="side-nav-item">More...</span>
-    <cdl-side-nav-item>
-        <span class="side-nav-item">Content...</span>
-    </cdl-side-nav-item>
-  </cdl-side-nav-item>
-</cdl-side-nav>
+    <n-side-nav-item>
+      <span class="side-nav-item">Some long content here</span>
+    </n-side-nav-item>
+    <n-side-nav-item>
+      <span class="side-nav-item">And even longer one here</span>
+      <div class="side-nav-pane-sub-template">
+        <n-side-nav-pane-title>And even longer one here</n-side-nav-pane-title>
+        <n-tree-view
+          [items]="demoItems"
+          [template]="listTpl">
+        </n-tree-view>
+      </div>
+    </n-side-nav-item>
+    <n-side-nav-item>
+      <span class="side-nav-item">And here</span>
+      <div class="side-nav-pane-sub-template">
+        <n-side-nav-pane-title>And here</n-side-nav-pane-title>
+        <n-tree-view
+          [items]="demoItems2"
+          [template]="listTpl">
+        </n-tree-view>
+      </div>
+    </n-side-nav-item>
+  </n-side-nav-item>
+  <n-side-nav-item>
+    <n-icon
+      class="side-nav-glyph"
+      icon="attributes"
+      size="md">
+    </n-icon>
+    <span class="side-nav-item">Even more</span>
+    <n-side-nav-item>
+      <span class="side-nav-item">To show how ellipsis gets activated</span>
+    </n-side-nav-item>
+    <n-side-nav-item>
+      <span class="side-nav-item">And this is how ellipsis happens</span>
+      <div class="side-nav-pane-sub-template">
+        <n-side-nav-pane-title>And this is how ellipsis happens</n-side-nav-pane-title>
+        <n-tree-view
+          [items]="demoItems3"
+          [template]="listTpl">
+        </n-tree-view>
+      </div>
+    </n-side-nav-item>
+    <n-side-nav-item>
+      <span class="side-nav-item">And here</span>
+      <div class="side-nav-pane-sub-template">
+        <n-side-nav-pane-title>And here</n-side-nav-pane-title>
+        <n-tree-view
+          [items]="demoItems4"
+          [template]="listTpl">
+        </n-tree-view>
+      </div>
+    </n-side-nav-item>
+  </n-side-nav-item>
+</n-side-nav>
 
 
 <main class="main"
@@ -45,4 +97,15 @@
   <router-outlet></router-outlet>
 </main>
 
-<cdl-modal-placeholder></cdl-modal-placeholder>
+<n-modal-placeholder></n-modal-placeholder>
+<n-sprite sprite="core"></n-sprite>
+<n-sprite sprite="alerts_status"></n-sprite>
+<n-sprite sprite="arrows_chevrons"></n-sprite>
+<n-sprite sprite="brands"></n-sprite>
+<n-sprite sprite="calculator"></n-sprite>
+<n-sprite sprite="emoticons"></n-sprite>
+<n-sprite sprite="formatting"></n-sprite>
+<n-sprite sprite="mobile_controls"></n-sprite>
+<n-sprite sprite="playback_controls"></n-sprite>
+<n-sprite sprite="window_controls"></n-sprite>
+<n-sprite sprite="should_fail"></n-sprite>

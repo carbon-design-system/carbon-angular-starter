@@ -3,8 +3,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
+import { IconService } from '@peretz/neutrino';
 
-import { TopNavModule, SideNavModule, TreeViewModule, GlyphiconModule, ModalModule } from '@neutrino/neutrino';
+import {
+  TopNavModule,
+  SideNavModule,
+  TreeViewModule,
+  IconModule,
+  ModalModule
+} from '@peretz/neutrino';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -18,15 +26,16 @@ import { APP_ROUTES } from './app.routing';
   imports: [
     BrowserModule,
     FormsModule,
-    GlyphiconModule,
+    IconModule,
     HttpModule,
     ModalModule,
     SideNavModule,
     TopNavModule,
     TreeViewModule,
-    RouterModule.forRoot(APP_ROUTES, { useHash: true })
+    RouterModule.forRoot(APP_ROUTES, { useHash: true }),
+    TranslateModule.forRoot()
   ],
-  providers: [],
+  providers: [IconService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

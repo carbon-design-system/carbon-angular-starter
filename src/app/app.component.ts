@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IconService } from '@neutrino/neutrino';
+import { IconService } from '@peretz/neutrino';
 
 @Component({
   selector: 'app-root',
@@ -12,10 +12,7 @@ export class AppComponent {
   private topNavTitle = 'Seed';
   private sideNavOpen = true;
 
-  constructor() {
-    // by default IconService looks them up locally
-    IconService.setIconUrl('http://csx00509.canlab.ibm.com/icons/');
-  }
+  constructor() {}
 
   private onClick() {
     this.sideNavOpen = !this.sideNavOpen;
