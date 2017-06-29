@@ -4,13 +4,13 @@ import { HttpModule } from '@angular/http';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
-import { IconService } from '@peretz/neutrino';
 
 import {
   TopNavModule,
   SideNavModule,
   TreeViewModule,
   IconModule,
+  IconService,
   ModalModule
 } from '@peretz/neutrino';
 
