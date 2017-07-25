@@ -1,16 +1,16 @@
 # Neutrino Seed
 
+## First time user?
+[Yes.](#firsttimeuser) [No.](#experienceduser) 
+
 ## Prerequisites
 
 * [npm](https://www.npmjs.com/) (`brew install npm`)
 * [git](https://git-scm.com/) (`brew install git`)
 
-## NPM Setup
+<a name="firsttimeuser"></a>
 
-We use scoped packages from [npm-registry.whitewater.ibm.com](https://npm.whitewater.ibm.com/), so you will need access
-to this registry.
-
-You can get it by running the following command in the terminal and logging in with your IBM ID (use the part before @ for username):
+## Get access to IBM Whitewater NPM registry
 
 ```bash
 npm login --registry=https://npm-registry.whitewater.ibm.com --scope=@peretz --auth-type=oauth
@@ -18,21 +18,30 @@ npm login --registry=https://npm-registry.whitewater.ibm.com --scope=@peretz --a
 
 This will create/add to your `~/.npmrc` file the token required for access.
 
+The first time that you attempt to install a private package (with `npm install`), you will get an error on the command line, prompting you to visit a GitHub Enterprise URL. Copy the URL and paste it in a web browser. Complete the GitHub login to finalize authentication and resolve your token.
+
 [More details](https://github.ibm.com/Whitewater/npm-enterprise#option-2-using-npm-enterprise-for-private-packages-only)
 
-## Download and install
+After you've set up your NPM, proceed to download and install.
+
+## Have you used Github (GHE) before?
 
 If you haven't already, [add an SSH key to your GHE account](https://github.ibm.com/settings/keys).
 
-After you've set up your NPM, proceed to downloading and installing seed by pasting the following in the terminal
+<a name="experienceduser"></a>
+
+## Download and install
+
+Run the following in the terminal:
 
 ```bash
+# to download
 git clone git@github.ibm.com:peretz-next/neutrino-seed.git
+
+# to install
 cd neutrino-seed
 npm install
 ```
-
-The first time that you attempt to publish or install a private package, you will get an error on the command line, prompting you to visit a GitHub Enterprise URL. Copy the URL and paste it in a web browser. Complete the GitHub login to finalize authentication and resolve your token.
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to [http://localhost:4200/](http://localhost:4200/). The app will automatically reload if you change any of the source files.
