@@ -19,6 +19,8 @@ npm login --registry=https://npm-registry.whitewater.ibm.com --scope=@peretz --a
 
 ## Download and install
 
+If you haven't already, [add an SSH key to your GHE account](https://github.ibm.com/settings/keys).
+
 After you've set up your NPM, proceed to downloading and installing seed by pasting the following in the terminal
 
 ```bash
