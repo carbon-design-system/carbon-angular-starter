@@ -8,15 +8,17 @@
 ## NPM Setup
 
 We use scoped packages from [npm-registry.whitewater.ibm.com](https://npm.whitewater.ibm.com/), so you will need access
-to this registry. Please follow
-[this document](https://github.ibm.com/Whitewater/npm-enterprise#option-2-using-npm-enterprise-for-private-packages-only) to login,
-this will create/add to your `~/.npmrc` file the token required for access.
+to this registry.
 
-You can do this by running the following command in the terminal and logging in with your IBM ID (use the part before @ for username):
+You can get it by running the following command in the terminal and logging in with your IBM ID (use the part before @ for username):
 
 ```bash
 npm login --registry=https://npm-registry.whitewater.ibm.com --scope=@peretz --auth-type=oauth
 ```
+
+This will create/add to your `~/.npmrc` file the token required for access.
+
+[More details](https://github.ibm.com/Whitewater/npm-enterprise#option-2-using-npm-enterprise-for-private-packages-only)
 
 ## Download and install
 
