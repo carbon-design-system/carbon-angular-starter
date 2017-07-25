@@ -10,7 +10,7 @@
 
 <a name="firsttimeuser"></a>
 
-## Get access to IBM Whitewater NPM registry
+### Get access to IBM Whitewater NPM registry
 
 ```bash
 npm login --registry=https://npm-registry.whitewater.ibm.com --scope=@peretz --auth-type=oauth
@@ -24,7 +24,7 @@ The first time that you attempt to install a private package (with `npm install`
 
 After you've set up your NPM, proceed to download and install.
 
-## Have you used Github (GHE) before?
+### Have you used Github (GHE) before?
 
 If you haven't already, [add an SSH key to your GHE account](https://github.ibm.com/settings/keys).
 
