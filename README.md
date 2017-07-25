@@ -29,6 +29,8 @@ cd neutrino-seed
 npm install
 ```
 
+You may need to validate your whitewater session by visiting the link `npm install` gives you.
+
 ## Development server
 Run `ng serve` for a dev server. Navigate to [http://localhost:4200/](http://localhost:4200/). The app will automatically reload if you change any of the source files.
 
