@@ -3,6 +3,7 @@
 ## Prerequisites
 
 * [npm](https://www.npmjs.com/) (`brew install npm`)
+* [git](https://git-scm.com/) (`brew install git`)
 
 ## NPM Setup
 
@@ -29,7 +30,7 @@ cd neutrino-seed
 npm install
 ```
 
-You may need to validate your whitewater session by visiting the link `npm install` gives you.
+If the installation doesn't go through, you may need to validate your whitewater session by visiting the link shown in the error.
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to [http://localhost:4200/](http://localhost:4200/). The app will automatically reload if you change any of the source files.
