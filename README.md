@@ -50,7 +50,7 @@ Run `ng serve` for a dev server. Navigate to [http://localhost:4200/](http://loc
 
 ## How to use components
 
-Look at the [component library](http://peretz.stage1.mybluemix.net/component-library)
+Look at the [component library](http://peretz.stage1.mybluemix.net/component-library).
 
 ## Code scaffolding
 
