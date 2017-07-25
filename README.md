@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-* [npm](https://www.npmjs.com/) (brew install npm)
+* [npm](https://www.npmjs.com/) (`brew install npm`)
 
 ## NPM Setup
 
