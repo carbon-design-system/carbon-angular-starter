@@ -7,9 +7,19 @@ to this registry. Please follow
 [this document](https://github.ibm.com/Whitewater/npm-enterprise#option-2-using-npm-enterprise-for-private-packages-only) to login,
 this will create/add to your `~/.npmrc` file the token required for access.
 
-You can do this by running the following in the terminal and logging in with your IBM ID (use the part before @ for username):
+You can do this by running the following command in the terminal and logging in with your IBM ID (use the part before @ for username):
 
-`npm login --registry=https://npm-registry.whitewater.ibm.com --scope=@peretz --auth-type=oauth`
+```bash
+npm login --registry=https://npm-registry.whitewater.ibm.com --scope=@peretz --auth-type=oauth
+```
+
+## Download and install
+
+```bash
+git clone git@github.ibm.com:peretz-next/neutrino-seed.git
+cd neutrino-seed
+npm install
+```
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
