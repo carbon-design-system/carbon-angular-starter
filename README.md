@@ -16,6 +16,8 @@
 npm login --registry=https://npm-registry.whitewater.ibm.com --scope=@peretz --auth-type=oauth
 ```
 
+When asked for username, enter the part of your IBM email before the @ sign (i.e. for jon.doe@ibm.com it would be jon.doe)
+
 This will create/add to your `~/.npmrc` file the token required for access.
 
 The first time that you attempt to install a private package (with `npm install`), you will get an error on the command line, prompting you to visit a GitHub Enterprise URL. Copy the URL and paste it in a web browser. Complete the GitHub login to finalize authentication and resolve your token.
