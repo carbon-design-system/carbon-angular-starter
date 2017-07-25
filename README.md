@@ -32,7 +32,7 @@ cd neutrino-seed
 npm install
 ```
 
-If the installation doesn't go through, you may need to validate your whitewater session by visiting the link shown in the error.
+The first time that you attempt to publish or install a private package, you will get an error on the command line, prompting you to visit a GitHub Enterprise URL. Copy the URL and paste it in a web browser. Complete the GitHub login to finalize authentication and resolve your token.
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to [http://localhost:4200/](http://localhost:4200/). The app will automatically reload if you change any of the source files.
