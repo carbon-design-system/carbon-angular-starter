@@ -1,5 +1,9 @@
 # Neutrino Seed
 
+## Prerequisites
+
+* [npm](https://www.npmjs.com/) (brew install npm)
+
 ## NPM Setup
 
 We use scoped packages from [npm-registry.whitewater.ibm.com](https://npm.whitewater.ibm.com/), so you will need access
@@ -14,6 +18,8 @@ npm login --registry=https://npm-registry.whitewater.ibm.com --scope=@peretz --a
 ```
 
 ## Download and install
+
+After you've set up your NPM, proceed to downloading and installing seed by pasting the following in the terminal
 
 ```bash
 git clone git@github.ibm.com:peretz-next/neutrino-seed.git
