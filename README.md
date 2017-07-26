@@ -8,7 +8,7 @@
 * [npm](https://www.npmjs.com/) (`brew install npm`)
 * [git](https://git-scm.com/) (`brew install git`)
 
-<a name="firsttimeuser"></a>
+<a id="firsttimeuser"></a>
 
 ### Get access to IBM Whitewater NPM registry
 
@@ -20,6 +20,8 @@ npm login --registry=https://npm-registry.whitewater.ibm.com --scope=@peretz --a
 
 This will create/add to your `~/.npmrc` file the token required for access.
 
+<a id="npminstallerror"></a>
+
 * The first time that you attempt to install a private package (with `npm install`), you will get an error on the command line, prompting you to visit a GitHub Enterprise URL. Copy the URL and paste it in a web browser. Complete the GitHub login to finalize authentication and resolve your token.
 
 [More details](https://github.ibm.com/Whitewater/npm-enterprise#option-2-using-npm-enterprise-for-private-packages-only)
@@ -30,7 +32,7 @@ After you've set up your NPM, proceed to download and install.
 
 If you haven't already, [add an SSH key to your GHE account](https://github.ibm.com/settings/keys).
 
-<a name="experienceduser"></a>
+<a id="experienceduser"></a>
 
 ## Download and install
 
@@ -44,6 +46,8 @@ git clone git@github.ibm.com:peretz-next/neutrino-seed.git
 cd neutrino-seed
 npm install
 ```
+
+Got an error during `npm install`? See [this](#npminstallerror).
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to [http://localhost:4200/](http://localhost:4200/). The app will automatically reload if you change any of the source files.
