@@ -56,7 +56,7 @@ Run `ng serve` for a dev server. Navigate to [http://localhost:4200/](http://loc
 
 Look at the [component library](http://peretz.stage1.mybluemix.net/component-library).
 
-## Code scaffolding
+## Create new angular components
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
 
