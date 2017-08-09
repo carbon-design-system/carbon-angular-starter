@@ -7,6 +7,7 @@
 
 * [npm](https://www.npmjs.com/) (`brew install npm`)
 * [git](https://git-scm.com/) (`brew install git`)
+* [angular-cli](https://cli.angular.io/) (`sudo npm install -g @angular/cli`)
 
 <a id="firsttimeuser"></a>
 
