@@ -55,7 +55,7 @@ Run `ng serve` for a dev server. Navigate to [http://localhost:4200/](http://loc
 
 ## How to use components
 
-Look at the [component library](http://peretz.stage1.mybluemix.net/component-library).
+Look at the [component library](http://csx00073.canlab.ibm.com:3000/component-library) and [developer documentation](https://pages.github.ibm.com/peretz-next/neutrino/documentation/).
 
 ## Create new angular components
 
