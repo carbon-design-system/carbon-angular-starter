@@ -41,7 +41,7 @@ Run the following in the terminal:
 
 ```bash
 # to download
-git clone git@github.ibm.com:peretz-next/neutrino-seed.git
+git clone git@github.ibm.com:peretz/neutrino-seed.git
 
 # to install
 cd neutrino-seed
@@ -55,7 +55,7 @@ Run `ng serve` for a dev server. Navigate to [http://localhost:4200/](http://loc
 
 ## How to use components
 
-Look at the [component library](http://csx00073.canlab.ibm.com:3000/component-library) and [developer documentation](https://pages.github.ibm.com/peretz-next/neutrino/documentation/).
+Look at the [component library](http://csx00073.canlab.ibm.com:3000/component-library) and [developer documentation](https://pages.github.ibm.com/peretz/neutrino/documentation/).
 
 ## Create new angular components
 
