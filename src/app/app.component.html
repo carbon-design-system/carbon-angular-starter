@@ -1,100 +1,95 @@
 <ng-template #listTpl let-item="item">
-  <span *ngIf="item.icon"><n-icon icon="{{item.icon}}" size="md"></n-icon></span>
-  <span class="side-nav-item" [routerLink]="item.link">{{item.content}}</span>
+	<span *ngIf="item.icon"><n-icon icon="{{item.icon}}" size="md"></n-icon></span>
+	<span class="side-nav-item" [routerLink]="item.link">{{item.content}}</span>
 </ng-template>
 
 
 <n-top-nav [brand]="topNavBrand" [badge]="topNavBadge" [fixed]="true" >
-  <n-hamburger (onClick)="onClick($event)" [selected]="sideNavOpen" hamburger></n-hamburger>
-  <div title>
-			<a class="top-nav-heading top-nav-link-item fl" href="#">
-				<h1 class="top-nav-brand">
-					<strong>{{topNavBrand}}</strong>
-				</h1>
-			</a>
-			<span class="top-nav-link-item top-nav-product-title" href="#">
-				{{topNavTitle}}
-			</span>
-		</div>
+	<n-hamburger (onClick)="onClick($event)" [selected]="sideNavOpen" hamburger></n-hamburger>
+	<a class="top-nav_brand" href="#" title>
+		<h1>
+			<strong>{{topNavBrand}}</strong>
+		</h1>
+	</a>
 </n-top-nav>
 
-<n-side-nav class="side-nav" [open]="sideNavOpen" [fixed]="true">
-  <n-side-nav-item routerLink="/table" tabindex="-1">
-    <n-icon
-      class="side-nav-glyph"
-      icon="lightbulb"
-      size="md">
-    </n-icon>
-    <span class="side-nav-item">Menu item 1</span>
-  </n-side-nav-item>
-  <n-side-nav-item>
-    <n-icon
-      class="side-nav-glyph"
-      icon="gears"
-      size="md">
-    </n-icon>
-    <span class="side-nav-item">Menu item 2</span>
-    <n-side-nav-item>
-      <span class="side-nav-item">Sub-menu item 1</span>
-    </n-side-nav-item>
-    <n-side-nav-item>
-      <span class="side-nav-item">Sub-menu item 2</span>
-      <div class="side-nav-pane-sub-template">
-        <n-side-nav-pane-title>Sub-menu item 2</n-side-nav-pane-title>
-        <n-tree-view
-          [items]="demoItems"
-          [template]="listTpl">
-        </n-tree-view>
-      </div>
-    </n-side-nav-item>
-    <n-side-nav-item>
-      <span class="side-nav-item">Sub-menu item 3</span>
-      <div class="side-nav-pane-sub-template">
-        <n-side-nav-pane-title>Sub-menu item 3</n-side-nav-pane-title>
-        <n-tree-view
-          [items]="demoItems2"
-          [template]="listTpl">
-        </n-tree-view>
-      </div>
-    </n-side-nav-item>
-  </n-side-nav-item>
-  <n-side-nav-item>
-    <n-icon
-      class="side-nav-glyph"
-      icon="attributes"
-      size="md">
-    </n-icon>
-    <span class="side-nav-item">Menu item 3</span>
-    <n-side-nav-item>
-      <span class="side-nav-item">Sub-menu item 4</span>
-    </n-side-nav-item>
-    <n-side-nav-item>
-      <span class="side-nav-item">Sub-menu item 5</span>
-      <div class="side-nav-pane-sub-template">
-        <n-side-nav-pane-title>Sub-menu item 5</n-side-nav-pane-title>
-        <n-tree-view
-          [items]="demoItems3"
-          [template]="listTpl">
-        </n-tree-view>
-      </div>
-    </n-side-nav-item>
-    <n-side-nav-item>
-      <span class="side-nav-item">And here</span>
-      <div class="side-nav-pane-sub-template">
-        <n-side-nav-pane-title>And here</n-side-nav-pane-title>
-        <n-tree-view
-          [items]="demoItems4"
-          [template]="listTpl">
-        </n-tree-view>
-      </div>
-    </n-side-nav-item>
-  </n-side-nav-item>
+<n-side-nav [open]="sideNavOpen">
+	<n-side-nav-group routerLink="/table" tabindex="-1">
+		<n-icon
+			class="accordion_icon"
+			icon="lightbulb"
+			size="md">
+		</n-icon>
+		<span class="accordion_title">Menu item 1</span>
+	</n-side-nav-group>
+	<n-side-nav-group>
+		<n-icon
+			class="accordion_icon"
+			icon="gears"
+			size="md">
+		</n-icon>
+		<span class="accordion_title">Menu item 2</span>
+		<n-side-nav-item>
+			<span class="side-nav-item">Sub-menu item 1</span>
+		</n-side-nav-item>
+		<n-side-nav-item>
+			<span class="side-nav-item">Sub-menu item 2</span>
+			<n-side-nav-subpanel>
+				<n-side-nav-pane-title>Sub-menu item 2</n-side-nav-pane-title>
+				<n-tree-view
+					[items]="demoItems"
+					[template]="listTpl">
+				</n-tree-view>
+			</n-side-nav-subpanel>
+		</n-side-nav-item>
+		<n-side-nav-item>
+			<span class="side-nav-item">Sub-menu item 3</span>
+			<n-side-nav-subpanel>
+				<n-side-nav-pane-title>Sub-menu item 3</n-side-nav-pane-title>
+				<n-tree-view
+					[items]="demoItems2"
+					[template]="listTpl">
+				</n-tree-view>
+			</n-side-nav-subpanel>
+		</n-side-nav-item>
+	</n-side-nav-group>
+	<n-side-nav-group>
+		<n-icon
+			class="accordion_icon"
+			icon="attributes"
+			size="md">
+		</n-icon>
+		<span class="accordion_title">Menu item 3</span>
+		<n-side-nav-item>
+			<span class="side-nav-item">Sub-menu item 4</span>
+		</n-side-nav-item>
+		<n-side-nav-item>
+			<span class="side-nav-item">Sub-menu item 5</span>
+			<n-side-nav-subpanel>
+				<n-side-nav-pane-title>Sub-menu item 5</n-side-nav-pane-title>
+				<n-tree-view
+					[items]="demoItems3"
+					[template]="listTpl">
+				</n-tree-view>
+			</n-side-nav-subpanel>
+		</n-side-nav-item>
+		<n-side-nav-item>
+			<span class="side-nav-item">And here</span>
+			<n-side-nav-subpanel>
+				<n-side-nav-pane-title>And here</n-side-nav-pane-title>
+				<n-tree-view
+					[items]="demoItems4"
+					[template]="listTpl">
+				</n-tree-view>
+			</n-side-nav-subpanel>
+		</n-side-nav-item>
+	</n-side-nav-group>
 </n-side-nav>
 
 
 <main class="main"
-  [ngClass]="{'side-nav-open': sideNavOpen}">
-  <router-outlet></router-outlet>
+	[ngClass]="{'side-nav-open': sideNavOpen}">
+	<router-outlet></router-outlet>
 </main>
 
 <n-modal-placeholder></n-modal-placeholder>
