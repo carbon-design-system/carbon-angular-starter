@@ -1,68 +1,68 @@
-import { Component } from '@angular/core';
-import { IconService } from '@peretz/neutrino';
+import { Component } from "@angular/core";
+import { IconService } from "@peretz/neutrino";
 
 @Component({
-	selector: 'app-root',
-	templateUrl: './app.component.html',
-	styleUrls: ['./app.component.scss']
+	selector: "app-root",
+	templateUrl: "./app.component.html",
+	styleUrls: ["./app.component.scss"]
 })
 export class AppComponent {
-	public topNavBadge = 'Beta';
-	public topNavBrand = 'Neutrino';
-	public topNavTitle = 'Seed';
+	public topNavBadge = "Beta";
+	public topNavBrand = "Neutrino";
+	public topNavTitle = "Seed";
 	public sideNavOpen = true;
 	public demoItems = [
 	{
-		content: 'Understand',
+		content: "Understand",
 		selected: false,
-		icon: 'alert',
+		icon: "alert",
 		items: [
 			{
-				content: 'Experience integrations',
+				content: "Experience integrations",
 				selected: false,
 				items: [
 					{
-						content: 'Experience integrations',
+						content: "Experience integrations",
 						selected: false
 					},
 					{
-						content: 'Predictive custom intelligence',
+						content: "Predictive custom intelligence",
 						selected: false
 					},
 				]
 			},
 			{
-				content: 'Predictive custom intelligence',
+				content: "Predictive custom intelligence",
 				selected: false
 			},
 		]
 	},
 	{
-		content: 'Plan',
+		content: "Plan",
 		selected: false,
-		icon: 'alert'
+		icon: "alert"
 	},
 	{
-		content: 'Design',
+		content: "Design",
 		selected: false,
-		icon: 'alert'
+		icon: "alert"
 	},
 	{
-		content: 'Build',
+		content: "Build",
 		selected: false,
-		icon: 'alert'
+		icon: "alert"
 
 	},
 	{
-		content: 'Listen',
+		content: "Listen",
 		selected: false,
-		icon: 'alert'
+		icon: "alert"
 
 	},
 	{
-		content: 'Optimize',
+		content: "Optimize",
 		selected: false,
-		icon: 'alert'
+		icon: "alert"
 
 	}];
 

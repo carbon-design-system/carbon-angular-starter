@@ -83,7 +83,7 @@
 		"prefer-const": true,
 		"quotemark": [
 			true,
-			"single"
+			"double"
 		],
 		"radix": true,
 		"semicolon": [
@@ -92,7 +92,8 @@
 		],
 		"triple-equals": [
 			true,
-			"allow-null-check"
+			"allow-null-check",
+			"allow-undefined-check"
 		],
 		"typedef-whitespace": [
 			true,
@@ -106,28 +107,38 @@
 		],
 		"typeof-compare": true,
 		"unified-signatures": true,
-		"variable-name": false,
+		"variable-name": [
+			true,
+			"ban-keywords",
+			"check-format",
+			"allow-leading-underscore"
+		],
 		"whitespace": [
 			true,
 			"check-branch",
 			"check-decl",
 			"check-operator",
+			"check-module",
 			"check-separator",
-			"check-type"
+			"check-rest-spread",
+			"check-type",
+			"check-preblock"
 		],
 
-		"directive-selector": [true, "attribute", "app", "camelCase"],
-		"component-selector": [true, "element", "app", "kebab-case"],
+		// [ENABLED, "attribute" | "element", "selectorPrefix" | ["listOfPrefixes"], "camelCase" | "kebab-case"]
+		"directive-selector": [true, "attribute", ["app", "test"], "camelCase"],
+		"component-selector": [true, "element", ["app", "test"], "kebab-case"],
+
 		"use-input-property-decorator": true,
 		"use-output-property-decorator": true,
 		"use-host-property-decorator": true,
+		"no-attribute-parameter-decorator": true,
 		"no-input-rename": true,
 		"no-output-rename": true,
+		"no-forward-ref": true,
 		"use-life-cycle-interface": true,
 		"use-pipe-transform-interface": true,
-		"component-class-suffix": true,
-		"directive-class-suffix": true,
-		"no-access-missing-member": true,
+
 		"templates-use-public": true,
 		"invoke-injectable": true
 	}
