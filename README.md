@@ -77,3 +77,24 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## PWA ready
+
+Neutrino seed was built with offline and progressive web app in mind.
+
+It provides [`manifest.json`](src/manifest.json) and service worker ([`sw.js`](src/sw.js)), along with [IBM bee icons](src/assets/icons) you can replace with your own to start you with.
+
+### Lighthouse results
+
+when ran with `ng serve --prod`
+
+![PWA results](./images/PWA%20results.png)
+
+Things you can/should do when deploying your app to make these scores even higher that we can't really do for you:
+
+- make service worker custom if what we're providing doesn't fully fit your use case
+- redirect HTTP traffic to HTTPS
+- enable text compression on your server (gzip, deflate or brotli)
+- inline css for above the fold content
+- make a custom icons sprite of only the icons you use and use it instead of our "convenience sprites"
+- use HTTP/2

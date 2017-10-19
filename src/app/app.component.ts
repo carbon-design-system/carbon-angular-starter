@@ -10,7 +10,7 @@ export class AppComponent {
 	public topNavBadge = "Beta";
 	public topNavBrand = "Neutrino";
 	public topNavTitle = "Seed";
-	public sideNavOpen = true;
+	public sideNavOpen = false;
 	public demoItems = [
 	{
 		content: "Understand",

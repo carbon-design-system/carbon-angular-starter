@@ -4,13 +4,15 @@
 </ng-template>
 
 
-<n-top-nav [brand]="topNavBrand" [badge]="topNavBadge" [fixed]="true" >
-	<n-hamburger (onClick)="onClick($event)" [selected]="sideNavOpen" hamburger></n-hamburger>
-	<a class="top-nav_brand" href="#" title>
-		<h1>
-			<strong>{{topNavBrand}}</strong>
-		</h1>
-	</a>
+<n-top-nav [fixed]="true">
+  <n-hamburger (onClick)="onClick()" [selected]="sideNavOpen" hamburger></n-hamburger>
+  <div title>
+        <a class="top-nav_brand" routerLink="/">
+            <h1>
+                <strong>{{topNavBrand}}</strong> <span class="secondary">{{topNavTitle}}</span>
+            </h1>
+        </a>
+    </div>
 </n-top-nav>
 
 <n-side-nav [open]="sideNavOpen">
