@@ -22,8 +22,9 @@
 		"@angular/platform-browser-dynamic": "^4.4.4",
 		"@angular/router": "^4.4.4",
 		"@ngx-translate/core": "8.0.0",
-		"@peretz/neutrino": "1.0.0",
-		"@peretz/matter": "1.0.0",
+		"@peretz/charts": "0.0.1-alpha.a48c1",
+		"@peretz/matter": "1.0.0-alpha.f9d67",
+		"@peretz/neutrino": "1.0.0-alpha.e4f50",
 		"core-js": "^2.5.1",
 		"rxjs": "^5.4.3",
 		"zone.js": "^0.8.18"
