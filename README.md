@@ -9,9 +9,38 @@
 * [git](https://git-scm.com/) (`brew install git`)
 * [angular-cli](https://cli.angular.io/) (`sudo npm install -g @angular/cli`)
 
+
+### Get access to IBM Artifactory NPM Peretz registry
+
+If you used to use Peretz libraries from Whitewater NPM, you'll need to clean those settings from your `~/.npmrc`.
+You can easily do that by removing that file (`rm -f ~/.npmrc`) or backing it up (`mv ~/.npmrc ~/.npmrc.backup`),
+although if you have other things dependant on it, it may break things, so you'll want to do it manually by
+removing all the lines containing `npm-registry.whitewater.ibm.com` from it.
+
+```bash
+nano ~/.npmrc
+```
+
 <a id="firsttimeuser"></a>
 
-### Get access to IBM Whitewater NPM registry
+#### Really get access to IBM artifactory NPM Peretz registry
+
+Run the following to add the needed information
+to your `~/.npmrc`. Replace `your.email@ibm.com` with your actual IBM email address and use your w3id password to
+authenticate when asked.
+
+```bash
+curl -uyour.email@ibm.com https://na.artifactory.swg-devops.com/artifactory/api/npm/wce-peretz-npm-local/auth/peretz >> ~/.npmrc
+```
+
+[Proceed.](#experienceduser)
+
+### Get access to IBM Whitewater NPM registry (now **deprecated** and from 2018 unavailable)
+
+If you got access to Artifactory, skip this step, it's here for completeness and will be removed once
+Whitewater NPN registry is no longer available, in 2018.
+
+If you're still using it, make plans to move to Artifactory.
 
 ```bash
 npm login --registry=https://npm-registry.whitewater.ibm.com --scope=@peretz --auth-type=oauth
@@ -48,14 +77,14 @@ cd neutrino-seed
 npm install
 ```
 
-Got an error during `npm install`? See [this](#npminstallerror).
+On Whitewater and got an error during `npm install`? See [this](#npminstallerror).
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to [http://localhost:4200/](http://localhost:4200/). The app will automatically reload if you change any of the source files.
 
 ## How to use components
 
-Look at the [component library](http://csx00073.canlab.ibm.com:3000/component-library) and [developer documentation](https://pages.github.ibm.com/peretz/neutrino/documentation/).
+Look at the [component library](http://peretz.stage1.mybluemix.net/component-library) and [developer documentation](https://pages.github.ibm.com/peretz/neutrino/documentation/).
 
 ## Create new angular components
 
