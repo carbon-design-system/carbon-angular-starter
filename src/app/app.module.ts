@@ -1,8 +1,9 @@
 import { BrowserModule } from "@angular/platform-browser";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { FormsModule } from "@angular/forms";
 import { HttpModule } from "@angular/http";
 import { NgModule } from "@angular/core";
-import { RouterModule } from "@angular/router";
+import { AppRoutingModule } from "./app-routing.module";
 import { TranslateModule } from "@ngx-translate/core";
 
 import {
@@ -11,28 +12,28 @@ import {
 	TreeViewModule,
 	IconModule,
 	IconService,
-	ModalModule
+	ModalModule,
+	NFormsModule,
 } from "@peretz/neutrino";
 
 import { AppComponent } from "./app.component";
-import { HomeComponent } from "./home/home.component";
-import { APP_ROUTES } from "./app.routing";
 
 @NgModule({
 	declarations: [
-		AppComponent,
-		HomeComponent
+		AppComponent
 	],
 	imports: [
 		BrowserModule,
+		BrowserAnimationsModule,
 		FormsModule,
 		IconModule,
 		HttpModule,
 		ModalModule,
+		NFormsModule,
 		SideNavModule,
 		TopNavModule,
 		TreeViewModule,
-		RouterModule.forRoot(APP_ROUTES, { useHash: true }),
+		AppRoutingModule,
 		TranslateModule.forRoot()
 	],
 	providers: [IconService],
