@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
 import { HomeComponent } from "./home.component";
+import { ModalModule } from "@peretz/neutrino";
 
 describe("HomeComponent", () => {
 	let component: HomeComponent;
@@ -8,6 +9,7 @@ describe("HomeComponent", () => {
 
 	beforeEach(async(() => {
 		TestBed.configureTestingModule({
+			imports: [ ModalModule ],
 			declarations: [ HomeComponent ]
 		})
 		.compileComponents();
