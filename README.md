@@ -33,29 +33,6 @@ authenticate when asked.
 curl -uyour.email@ibm.com https://na.artifactory.swg-devops.com/artifactory/api/npm/wce-peretz-npm-local/auth/peretz >> ~/.npmrc
 ```
 
-[Proceed.](#experienceduser)
-
-### Get access to IBM Whitewater NPM registry (now **deprecated** and from 2018 unavailable)
-
-If you got access to Artifactory, skip this step, it's here for completeness and will be removed once
-Whitewater NPN registry is no longer available, in 2018.
-
-If you're still using it, make plans to move to Artifactory.
-
-```bash
-npm login --registry=https://npm-registry.whitewater.ibm.com --scope=@peretz --auth-type=oauth
-```
-
-* When asked for username, enter the part of your IBM email before the @ sign (i.e. for jon.doe@ibm.com it would be jon.doe)
-
-This will create/add to your `~/.npmrc` file the token required for access.
-
-<a id="npminstallerror"></a>
-
-* The first time that you attempt to install a private package (with `npm install`), you will get an error on the command line, prompting you to visit a GitHub Enterprise URL. Copy the URL and paste it in a web browser. Complete the GitHub login to finalize authentication and resolve your token.
-
-[More details](https://github.ibm.com/Whitewater/npm-enterprise#option-2-using-npm-enterprise-for-private-packages-only)
-
 After you've set up your NPM, proceed to download and install.
 
 ### Have you used Github (GHE) before?
@@ -84,7 +61,7 @@ Run `ng serve` for a dev server. Navigate to [http://localhost:4200/](http://loc
 
 ## How to use components
 
-Look at the [component library](http://peretz.stage1.mybluemix.net/component-library) and [developer documentation](https://pages.github.ibm.com/peretz/neutrino/documentation/).
+Look at the [component library](http://billboard1.fyre.ibm.com/component-library) and [developer documentation](https://pages.github.ibm.com/peretz/neutrino/documentation/).
 
 ## Create new angular components
 
@@ -112,6 +89,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 Neutrino seed was built with offline and progressive web app in mind.
 
 It provides [`manifest.json`](src/manifest.json) and service worker ([`sw.js`](src/sw.js)), along with [IBM bee icons](src/assets/icons) you can replace with your own to start you with.
+
+For daily development purposes, this may get in the way of your workflow, so if you're not actively working on customizing your service worker, we suggest disabling cache/offline data/service worker in your browser. Just remember to re-enable it when you're doing tests on it.
 
 ### Lighthouse results
 
