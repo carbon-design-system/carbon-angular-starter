@@ -2,7 +2,7 @@ import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
 import { HomeRoutingModule } from "./home-routing.module";
-import { HomeComponent, SampleModalComponent } from "./home/home.component";
+import { HomeComponent } from "./home/home.component";
 import { IconModule, ModalModule, NFormsModule } from "@peretz/neutrino";
 
 @NgModule({
@@ -13,7 +13,6 @@ import { IconModule, ModalModule, NFormsModule } from "@peretz/neutrino";
 		ModalModule,
 		NFormsModule
 	],
-	declarations: [HomeComponent, SampleModalComponent],
-	entryComponents: [SampleModalComponent]
+	declarations: [HomeComponent]
 })
 export class HomeModule { }
