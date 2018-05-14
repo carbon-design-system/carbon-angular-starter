@@ -1,5 +1,7 @@
 # Neutrino Seed
 
+Kick start your application development with Neutrino.
+
 ## First time user?
 [Yes.](#firsttimeuser) [No.](#experienceduser) 
 
@@ -106,3 +108,9 @@ Things you can/should do when deploying your app to make these scores even highe
 - inline css for above the fold content
 - make a custom icons sprite of only the icons you use and use it instead of our "convenience sprites"
 - use HTTP/2
+
+### Contact
+
+[Send feedback](https://peretz.slack.com/messages/C6DS43Y5N)
+
+[Ask a question](https://peretz.slack.com/messages/C6DS43Y5N)
