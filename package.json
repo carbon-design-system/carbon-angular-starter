@@ -24,7 +24,7 @@
 		"@angular/router": "^5.1.1",
 		"@ngx-translate/core": "8.0.0",
 		"@peretz/charts": "0.1.1-alpha.7d1c3",
-		"@peretz/matter": "1.2.0-alpha.2267e",
+		"@peretz/matter": "1.2.0",
 		"@peretz/neutrino": "1.2.0",
 		"core-js": "^2.5.3",
 		"rxjs": "5.5.5",
