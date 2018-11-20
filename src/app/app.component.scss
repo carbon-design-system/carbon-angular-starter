@@ -1,18 +1,22 @@
 @import "../assets/scss/scss-utils.scss";
 
 .main {
-	padding: 15px;
-	margin-top: $topnav-height;
-	position: absolute;
 	width: 100%;
-	transition: padding-left 0.35s ease-in-out;
-
-	&.side-nav-open {
-		padding-left: 280px;
-	}
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 }
 
-.side-nav {
+.wrapper {
+	clear: left;
 	float: left;
-	margin-top: $topnav-height;
+	position: relative;
+	left: 50%;
+}
+
+.container {
+	display: block;
+	float: left;
+	position: relative;
+	right: 50%;
 }

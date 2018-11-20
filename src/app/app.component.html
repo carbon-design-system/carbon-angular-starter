@@ -1,110 +1,46 @@
-<ng-template #listTpl let-item="item">
-	<span *ngIf="item.icon"><n-icon icon="{{item.icon}}" size="md"></n-icon></span>
-	<span class="side-nav-item" [routerLink]="item.link">{{item.content}}</span>
-</ng-template>
 
 
-<n-top-nav [fixed]="true">
-  <n-hamburger (onClick)="onClick()" [selected]="sideNavOpen" hamburger></n-hamburger>
-  <div title>
-        <a class="top-nav_brand" routerLink="/">
-            <h1>
-                <strong>{{topNavBrand}}</strong> <span class="secondary">{{topNavTitle}}</span>
-            </h1>
-        </a>
-    </div>
-</n-top-nav>
+<main class="main">
+	<div class="wrapper">
+		<div class="container">
+			<h1 style="text-align: center">Congratulations, you made it!</h1>
+			<h3 style="text-align: center">You have offically made your first Carbon Angular app :)</h3>
 
-<n-side-nav [open]="sideNavOpen">
-	<n-side-nav-group routerLink="/" tabindex="-1">
-		<div class="accordion_icon">
-			<n-icon
-				icon="lightbulb"
-				size="md">
-			</n-icon>
+			<div style="max-width: 800px; margin: 50px 0;">
+				<p>
+					This app is to get you quickly started with our Carbon Angular libraries.
+					It currently includes the accordion, button and tab components. Feel free
+					to add or remove any components you desire.
+					To help you get started we've also set up:
+				</p>
+				<ul class="bx--list--unordered">
+					<li class="bx--list__item">
+						A build process
+					</li>
+					<li class="bx--list__item">
+						Angular-cli
+					</li>
+					<li class="bx--list__item">
+						Code styles and editor configs
+					</li>
+					<li class="bx--list__item">
+						Folder searcher
+					</li>
+					<li class="bx--list__item">
+						Lazy loading
+					</li>
+					<li class="bx--list__item">
+						Routing
+					</li>
+					<li class="bx--list__item">
+						Service workers
+					</li>
+					<li class="bx--list__item">
+						And a test framework
+					</li>
+				</ul>
+			</div>
+			<router-outlet></router-outlet>
 		</div>
-		<span class="accordion_title">Menu item 1</span>
-	</n-side-nav-group>
-	<n-side-nav-group>
-		<div class="accordion_icon">
-			<n-icon
-				icon="gears"
-				size="md">
-			</n-icon>
-		</div>
-		<span class="accordion_title">Menu item 2</span>
-		<n-side-nav-item>
-			<span class="side-nav-item">Sub-menu item 1</span>
-		</n-side-nav-item>
-		<n-side-nav-item>
-			<span class="side-nav-item">Sub-menu item 2</span>
-			<n-side-nav-subpanel>
-				<n-side-nav-pane-title>Sub-menu item 2</n-side-nav-pane-title>
-				<n-tree-view
-					[items]="demoItems"
-					[template]="listTpl">
-				</n-tree-view>
-			</n-side-nav-subpanel>
-		</n-side-nav-item>
-		<n-side-nav-item>
-			<span class="side-nav-item">Sub-menu item 3</span>
-			<n-side-nav-subpanel>
-				<n-side-nav-pane-title>Sub-menu item 3</n-side-nav-pane-title>
-				<n-tree-view
-					[items]="demoItems2"
-					[template]="listTpl">
-				</n-tree-view>
-			</n-side-nav-subpanel>
-		</n-side-nav-item>
-	</n-side-nav-group>
-	<n-side-nav-group>
-		<div class="accordion_icon">
-			<n-icon
-				icon="attributes"
-				size="md">
-			</n-icon>
-		</div>
-		<span class="accordion_title">Menu item 3</span>
-		<n-side-nav-item>
-			<span class="side-nav-item">Sub-menu item 4</span>
-		</n-side-nav-item>
-		<n-side-nav-item>
-			<span class="side-nav-item">Sub-menu item 5</span>
-			<n-side-nav-subpanel>
-				<n-side-nav-pane-title>Sub-menu item 5</n-side-nav-pane-title>
-				<n-tree-view
-					[items]="demoItems3"
-					[template]="listTpl">
-				</n-tree-view>
-			</n-side-nav-subpanel>
-		</n-side-nav-item>
-		<n-side-nav-item>
-			<span class="side-nav-item">And here</span>
-			<n-side-nav-subpanel>
-				<n-side-nav-pane-title>And here</n-side-nav-pane-title>
-				<n-tree-view
-					[items]="demoItems4"
-					[template]="listTpl">
-				</n-tree-view>
-			</n-side-nav-subpanel>
-		</n-side-nav-item>
-	</n-side-nav-group>
-</n-side-nav>
-
-
-<main class="main"
-	[ngClass]="{'side-nav-open': sideNavOpen}">
-	<router-outlet></router-outlet>
+	</div>
 </main>
-
-<n-modal-placeholder></n-modal-placeholder>
-<n-sprite sprite="core_set"></n-sprite>
-<n-sprite sprite="alerts_status"></n-sprite>
-<n-sprite sprite="arrows_chevrons"></n-sprite>
-<n-sprite sprite="brands"></n-sprite>
-<n-sprite sprite="calculator"></n-sprite>
-<n-sprite sprite="emoticons"></n-sprite>
-<n-sprite sprite="formatting"></n-sprite>
-<n-sprite sprite="mobile_controls"></n-sprite>
-<n-sprite sprite="playback_controls"></n-sprite>
-<n-sprite sprite="window_controls"></n-sprite>
