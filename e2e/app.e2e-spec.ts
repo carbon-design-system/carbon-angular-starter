@@ -1,10 +1,10 @@
-import { NeutrinoSeedPage } from "./app.po";
+import { CarbonAngularStarterPage } from "./app.po";
 
-describe("neutrino-seed App", () => {
-	let page: NeutrinoSeedPage;
+describe("carbon-angular-starter App", () => {
+	let page: CarbonAngularStarterPage;
 
 	beforeEach(() => {
-		page = new NeutrinoSeedPage();
+		page = new CarbonAngularStarterPage();
 	});
 
 	it("should display message saying app works", () => {

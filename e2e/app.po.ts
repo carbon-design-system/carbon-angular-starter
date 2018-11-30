@@ -1,6 +1,6 @@
 import { browser, element, by } from "protractor";
 
-export class NeutrinoSeedPage {
+export class CarbonAngularStarterPage {
 	navigateTo() {
 		return browser.get("/");
 	}

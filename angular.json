@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "neutrino-seed": {
+    "carbon-angular-starter": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "neutrino-seed:build"
+            "browserTarget": "carbon-angular-starter:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "neutrino-seed:build:production"
+              "browserTarget": "carbon-angular-starter:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "neutrino-seed:build"
+            "browserTarget": "carbon-angular-starter:build"
           }
         },
         "test": {
@@ -97,7 +97,7 @@
         }
       }
     },
-    "neutrino-seed-e2e": {
+    "carbon-angular-starter-e2e": {
       "root": "e2e",
       "sourceRoot": "e2e",
       "projectType": "application",
@@ -106,7 +106,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "neutrino-seed:serve"
+            "devServerTarget": "carbon-angular-starter:serve"
           }
         },
         "lint": {
@@ -123,7 +123,7 @@
       }
     }
   },
-  "defaultProject": "neutrino-seed",
+  "defaultProject": "carbon-angular-starter",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
