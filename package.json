@@ -25,8 +25,8 @@
 		"core-js": "^2.5.3",
 		"rxjs": "^6.2.2",
 		"zone.js": "^0.8.26",
-		"carbon-components": "^9.66.4",
-		"carbon-components-angular": "^2.24.1"
+		"carbon-components": "^9.91.0",
+		"carbon-components-angular": "^2.43.0"
 	},
 	"devDependencies": {
 		"@angular-devkit/build-angular": "~0.8.0",
