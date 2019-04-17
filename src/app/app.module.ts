@@ -7,6 +7,7 @@ import { AppRoutingModule } from "./app-routing.module";
 
 import { AppComponent } from "./app.component";
 import { ListModule } from "carbon-components-angular";
+
 @NgModule({
 	declarations: [
 		AppComponent
