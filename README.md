@@ -14,7 +14,7 @@ Run the following in the terminal:
 
 ```bash
 # to download
-git clone git@github.com:carbon-design-system/carbon-angular-starter.git
+git clone https://github.com/carbon-design-system/carbon-angular-starter.git
 
 # to install
 cd carbon-angular-starter
