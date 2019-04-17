@@ -1,8 +1,20 @@
-@import "~carbon-components/css/carbon-components.min.css";
+@import "~carbon-components/scss/globals/scss/styles";
 
 body {
 	padding: 20px;
 	// for tooltips/popovers ... can be on any chld element before the popover
 	// but body is most conveient
 	position: relative;
+}
+
+h1 {
+	@include type-style('productive-heading-05');
+}
+
+h3 {
+	@include type-style('body-long-02');
+}
+
+p {
+	@include type-style('body-long-01');
 }

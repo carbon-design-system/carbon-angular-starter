@@ -22,12 +22,13 @@
     "@angular/platform-browser": "^7.2.12",
     "@angular/platform-browser-dynamic": "^7.2.12",
     "@angular/router": "^7.2.12",
+    "@carbon/icons-angular": "^10.1.0",
     "core-js": "^2.5.2",
     "rxjs": "^6.4.0",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26",
-    "carbon-components": "^9.91.0",
-    "carbon-components-angular": "^2.42.0"
+    "carbon-components": "^10.1.0",
+    "carbon-components-angular": "^3.0.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.13.8",
