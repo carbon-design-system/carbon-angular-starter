@@ -6,6 +6,7 @@ import { NgModule } from "@angular/core";
 import { AppRoutingModule } from "./app-routing.module";
 
 import { AppComponent } from "./app.component";
+import { ListModule } from "carbon-components-angular";
 
 @NgModule({
 	declarations: [
@@ -16,7 +17,8 @@ import { AppComponent } from "./app.component";
 		BrowserAnimationsModule,
 		FormsModule,
 		HttpModule,
-		AppRoutingModule
+		AppRoutingModule,
+		ListModule
 	],
 	bootstrap: [AppComponent]
 })
