@@ -1,14 +1,36 @@
-import { Component } from "@angular/core";
+import { Component, ViewEncapsulation, ViewChild } from "@angular/core";
 
 @Component({
 	selector: "app-root",
+	encapsulation: ViewEncapsulation.None,
 	templateUrl: "./app.component.html",
 	styleUrls: ["./app.component.scss"]
 })
 export class AppComponent {
-	constructor() {}
+	@ViewChild("container") container;
 
-	private clone (el) {
-		return JSON.parse(JSON.stringify(el));
+	onWhiteChange() {
+		this.container.nativeElement.classList.add("carbon--theme--white");
+		this.container.nativeElement.classList.remove("carbon--theme--g10");
+		this.container.nativeElement.classList.remove("carbon--theme--g100");
+		this.container.nativeElement.classList.remove("carbon--theme--g90");
+	}
+	onG10Change() {
+		this.container.nativeElement.classList.add("carbon--theme--g10");
+		this.container.nativeElement.classList.remove("carbon--theme--white");
+		this.container.nativeElement.classList.remove("carbon--theme--g100");
+		this.container.nativeElement.classList.remove("carbon--theme--g90");
+	}
+	onG100Change() {
+		this.container.nativeElement.classList.add("carbon--theme--g100");
+		this.container.nativeElement.classList.remove("carbon--theme--g10");
+		this.container.nativeElement.classList.remove("carbon--theme--white");
+		this.container.nativeElement.classList.remove("carbon--theme--g90");
+	}
+	onG90Change() {
+		this.container.nativeElement.classList.add("carbon--theme--g90");
+		this.container.nativeElement.classList.remove("carbon--theme--g10");
+		this.container.nativeElement.classList.remove("carbon--theme--g100");
+		this.container.nativeElement.classList.remove("carbon--theme--white");
 	}
 }

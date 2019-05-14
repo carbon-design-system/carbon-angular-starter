@@ -23,7 +23,10 @@
               "src/favicon.ico"
             ],
             "styles": [
-              "src/styles.scss"
+			  "src/styles.scss",
+			  "src/styles-g10.scss",
+			  "src/styles-g100.scss",
+			  "src/styles-g90.scss"
             ],
             "scripts": []
           },

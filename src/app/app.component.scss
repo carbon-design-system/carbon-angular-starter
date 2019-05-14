@@ -1,22 +1,30 @@
 @import "../assets/scss/scss-utils.scss";
 
-.main {
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-}
-
-.wrapper {
-	clear: left;
-	float: left;
-	position: relative;
-	left: 50%;
-}
-
 .container {
-	display: block;
-	float: left;
-	position: relative;
-	right: 50%;
+	padding: 2rem 5% 0;
+	height: 100vh;
+}
+
+.demo-content {
+	margin-top: 1rem;
+
+	.title {
+		font-size: 4rem;
+		font-weight: 400;
+	}
+
+	.body-text {
+		margin-top: 2rem;
+		margin-bottom: 4rem;
+	}
+
+	.list {
+		max-width: 500px;
+		padding-left: 50px;
+		column-count: 2;
+
+		li {
+			font-weight: bold;
+		}
+	}
 }
