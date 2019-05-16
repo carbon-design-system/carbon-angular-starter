@@ -1,5 +1,8 @@
-.carbon--theme--white {
+.carbon--theme--g100 {
 	$css--body: false;
+	@import '~carbon-components/scss/globals/scss/vendor/@carbon/elements/scss/themes/theme-maps';
+	$carbon--theme: $carbon--theme--g100;
+
 	@import "~carbon-components/scss/globals/scss/styles";
 	color: $text-01;
 	background-color: $ui-background;
@@ -13,12 +16,3 @@
 		@include type-style('body-long-02');
 	}
 }
-
-body {
-	@import "~carbon-components/scss/globals/scss/css--reset";
-	@import "~carbon-components/scss/globals/scss/typography";
-	@include reset;
-	@include type-style('body-short-01');
-    line-height: 1;
-}
-

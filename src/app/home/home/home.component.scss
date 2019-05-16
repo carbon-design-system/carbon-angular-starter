@@ -1,7 +1,43 @@
-.accoridon * {
-	max-width: 800px;
-}
+$theme-variations: (
+white: (
+	tabs-background-color:  #f3f3f3,
+	tile-border:			#0062ff 1px solid,
+	tile-color: 			#0062ff
+	),
+  g10: (
+	tabs-background-color:  #ffff,
+	tile-border:			#0062ff 1px solid,
+	tile-color: 			#0062ff
+  ),
+  g100: (
+	tabs-background-color:  #282828,
+	tile-border:			#f3f3f3 1px solid,
+	tile-color: 			#f3f3f3
+  ),
+  g90: (
+	tabs-background-color:  #3d3d3d,
+	tile-border:			#f3f3f3 1px solid,
+	tile-color: 			#f3f3f3
+  )
+) !default;
 
-.button {
-	padding: 5px;
+@each $theme-name, $theme in $theme-variations {
+	.carbon--theme--#{$theme-name} {
+		.bx--tabs,
+		div[role=tabpanel] {
+			padding: 1rem;
+			background-color: map-get($theme, tabs-background-color);
+		}
+
+		ibm-clickable-tile {
+			display: block;
+			border: map-get($theme, tile-border);
+
+			a {
+				height: 10rem;
+				text-decoration: none;
+				color: map-get($theme, tile-color);
+			}
+		}
+	}
 }
