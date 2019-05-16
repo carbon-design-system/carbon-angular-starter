@@ -4,12 +4,8 @@
 	$carbon--theme: $carbon--theme--g10;
 
 	@import "~carbon-components/scss/globals/scss/styles";
-
-	@include reset;
-    @include type-style('body-short-01');
-    color: $text-01;
-    background-color: $ui-background;
-    line-height: 1;
+	color: $text-01;
+	background-color: $ui-background;
 
 	p {
 		@include type-style('expressive-paragraph-01');
