@@ -55,5 +55,5 @@ Carbon Angular Starter was built with offline and progressive web app in mind.
 
 It provides [`manifest.json`](src/manifest.json) and service worker ([`sw.js`](src/sw.js)).
 
-In order to simplify development, service workers are turned off by default as this may get in the way of your workflow.
-If you're actively working on customizing your service worker or doing testing remember to turn them on by uncommeting the script tag content in index.html.
+In order to simplify development, service worker is not activated by default as this may get in the way of your workflow.
+If you're actively working on customizing your service worker or doing testing, remember to activate it by uncommeting the script tag content in index.html.
