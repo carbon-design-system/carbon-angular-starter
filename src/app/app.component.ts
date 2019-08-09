@@ -7,7 +7,7 @@ import { Component, ViewEncapsulation, ViewChild } from "@angular/core";
 	styleUrls: ["./app.component.scss"]
 })
 export class AppComponent {
-	@ViewChild("container") container;
+	@ViewChild("container", {static: true}) container;
 
 	onWhiteChange() {
 		this.container.nativeElement.classList.add("carbon--theme--white");

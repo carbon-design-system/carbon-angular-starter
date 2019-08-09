@@ -10,11 +10,14 @@
 			"dom"
 		],
 		"outDir": "../out-tsc/app",
-		"target": "es5",
-		"module": "es2015",
+		"target": "es2015",
+		"module": "esnext",
 		"baseUrl": "",
 		"types": []
 	},
+	"include": [
+		"**/*"
+	],
 	"exclude": [
 		"test.ts",
 		"**/*.spec.ts"
