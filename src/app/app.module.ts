@@ -3,9 +3,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { FormsModule } from "@angular/forms";
 import { NgModule } from "@angular/core";
 import { AppRoutingModule } from "./app-routing.module";
-
 import { AppComponent } from "./app.component";
-import { ListModule, RadioModule, GridModule } from "carbon-components-angular";
 
 @NgModule({
 	declarations: [
@@ -15,10 +13,7 @@ import { ListModule, RadioModule, GridModule } from "carbon-components-angular";
 		BrowserModule,
 		BrowserAnimationsModule,
 		FormsModule,
-		AppRoutingModule,
-		ListModule,
-		RadioModule,
-		GridModule
+		AppRoutingModule
 	],
 	bootstrap: [AppComponent]
 })

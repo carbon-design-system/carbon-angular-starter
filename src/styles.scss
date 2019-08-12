@@ -1,8 +1,28 @@
-.carbon--theme--white {
-	$css--body: false;
+$feature-flags: (
+	css--body: false, // we're providing our own body styles
+	css--reset: false // prevent thousands of resets being included...
+);
+
+body {
+	// To change the theme uncomment the below import and which ever carbon theme you want to use
+	// @import '~carbon-components/scss/globals/scss/vendor/@carbon/elements/scss/themes/theme-maps';
+	// $carbon--theme: $carbon--theme--g100;
+	// $carbon--theme: $carbon--theme--g90;
+	// $carbon--theme: $carbon--theme--g10;
+
 	@import "~carbon-components/scss/globals/scss/styles";
 	color: $text-01;
 	background-color: $ui-background;
+
+	@import "~carbon-components/scss/globals/scss/css--reset";
+	@include reset;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100vw;
+	min-height: 100vh;
+	font-family: "IBM Plex Sans", Arial, sans-serif;
 
 	p {
 		@include type-style('expressive-paragraph-01');
@@ -12,13 +32,5 @@
 	li {
 		@include type-style('body-long-02');
 	}
-}
-
-body {
-	@import "~carbon-components/scss/globals/scss/css--reset";
-	@import "~carbon-components/scss/globals/scss/typography";
-	@include reset;
-	@include type-style('body-short-01');
-    line-height: 1;
 }
 
