@@ -1,0 +1,25 @@
+.starter-home {
+	.title {
+		font-size: 4rem;
+		font-weight: 400;
+	}
+
+	.body-text {
+		margin-top: 2rem;
+		margin-bottom: 4rem;
+	}
+
+	.list {
+		max-width: 500px;
+		padding-left: 50px;
+		column-count: 2;
+
+		@media only screen and (max-width: 1055px) {
+			margin-top: 3rem;
+		}
+
+		li {
+			font-weight: bold;
+		}
+	}
+}

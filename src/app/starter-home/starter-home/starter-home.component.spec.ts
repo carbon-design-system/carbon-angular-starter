@@ -1,27 +1,33 @@
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { HomeComponent } from "./home.component";
+import { StarterHomeComponent } from "./starter-home.component";
 
-import { TabsModule, TilesModule, GridModule } from "carbon-components-angular";
+import {
+	GridModule,
+	ListModule,
+	TabsModule,
+	TilesModule
+} from "carbon-components-angular";
 
 describe("HomeComponent", () => {
-	let component: HomeComponent;
-	let fixture: ComponentFixture<HomeComponent>;
+	let component: StarterHomeComponent;
+	let fixture: ComponentFixture<StarterHomeComponent>;
 
 	beforeEach(async(() => {
 		TestBed.configureTestingModule({
 			imports: [
+				GridModule,
+				ListModule,
 				TabsModule,
-				TilesModule,
-				GridModule
+				TilesModule
 			],
-			declarations: [ HomeComponent ]
+			declarations: [ StarterHomeComponent ]
 		})
 		.compileComponents();
 	}));
 
 	beforeEach(() => {
-		fixture = TestBed.createComponent(HomeComponent);
+		fixture = TestBed.createComponent(StarterHomeComponent);
 		component = fixture.componentInstance;
 		fixture.detectChanges();
 	});

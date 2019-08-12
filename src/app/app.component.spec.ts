@@ -3,8 +3,6 @@ import { RouterTestingModule } from "@angular/router/testing";
 
 import { AppComponent } from "./app.component";
 
-import { ListModule, RadioModule, GridModule } from "carbon-components-angular";
-
 describe("AppComponent", () => {
 	beforeEach(async(() => {
 		TestBed.configureTestingModule({
@@ -12,10 +10,7 @@ describe("AppComponent", () => {
 				AppComponent
 			],
 			imports: [
-				RouterTestingModule,
-				ListModule,
-				RadioModule,
-				GridModule
+				RouterTestingModule
 			]
 		}).compileComponents();
 	}));
