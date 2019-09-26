@@ -28,7 +28,7 @@
     "core-js": "^3.2.1",
     "rxjs": "^6.5.3",
     "tslib": "^1.9.0",
-    "zone.js": "~0.10.2",
+    "zone.js": "~0.9.1",
     "carbon-components": "^10.6.2",
     "carbon-components-angular": "^3.16.3"
   },
@@ -52,6 +52,6 @@
     "protractor": "^5.4.2",
     "ts-node": "~8.4.1",
     "tslint": "^5.20.0",
-    "typescript": "3.6.3"
+    "typescript": "3.5.3"
   }
 }
