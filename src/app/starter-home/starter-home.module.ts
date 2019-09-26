@@ -8,10 +8,12 @@ import {
 	TabsModule,
 	TilesModule
 } from 'carbon-components-angular';
+import { StarterHomeRoutingModule } from './starter-home-routing.module';
 
 @NgModule({
 	imports: [
 		CommonModule,
+		StarterHomeRoutingModule,
 		GridModule,
 		ListModule,
 		TabsModule,

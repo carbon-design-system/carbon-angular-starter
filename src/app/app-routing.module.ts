@@ -5,11 +5,6 @@ const routes: Routes = [
 	{
 		path: '',
 		loadChildren: () => import('./starter-home/starter-home.module').then(m => m.StarterHomeModule)
-	},
-	{
-		path: '',
-		redirectTo: '',
-		pathMatch: 'full'
 	}
 ];
 
