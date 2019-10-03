@@ -30,7 +30,7 @@
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1",
     "carbon-components": "^10.6.2",
-    "carbon-components-angular": "^3.16.3"
+    "carbon-components-angular": "^3.17.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.6",
