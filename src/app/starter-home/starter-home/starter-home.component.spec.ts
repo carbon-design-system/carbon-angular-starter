@@ -1,15 +1,15 @@
-import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StarterHomeComponent } from "./starter-home.component";
+import { StarterHomeComponent } from './starter-home.component';
 
 import {
 	GridModule,
 	ListModule,
 	TabsModule,
 	TilesModule
-} from "carbon-components-angular";
+} from 'carbon-components-angular';
 
-describe("HomeComponent", () => {
+describe('HomeComponent', () => {
 	let component: StarterHomeComponent;
 	let fixture: ComponentFixture<StarterHomeComponent>;
 
@@ -32,7 +32,7 @@ describe("HomeComponent", () => {
 		fixture.detectChanges();
 	});
 
-	it("should create", () => {
+	it('should create', () => {
 		expect(component).toBeTruthy();
 	});
 });

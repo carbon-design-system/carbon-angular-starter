@@ -1,14 +1,14 @@
-import { CarbonAngularStarterPage } from "./app.po";
+import { CarbonAngularStarterPage } from './app.po';
 
-describe("carbon-angular-starter App", () => {
+describe('carbon-angular-starter App', () => {
 	let page: CarbonAngularStarterPage;
 
 	beforeEach(() => {
 		page = new CarbonAngularStarterPage();
 	});
 
-	it("should display message saying app works", () => {
+	it('should display message saying app works', () => {
 		page.navigateTo();
-		expect(page.getParagraphText()).toEqual("app works!");
+		expect(page.getParagraphText()).toEqual('app works!');
 	});
 });

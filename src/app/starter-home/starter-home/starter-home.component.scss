@@ -1,25 +1,32 @@
+@import "~carbon-components/scss/globals/scss/typography";
+@import "~carbon-components/scss/globals/scss/spacing";
+
 .starter-home {
 	.title {
-		font-size: 4rem;
-		font-weight: 400;
+		@include type-style("productive-heading-05");
+	}
+
+	.subtitle {
+		margin-top: carbon--mini-units(2);
+		@include type-style("productive-heading-02");
 	}
 
 	.body-text {
-		margin-top: 2rem;
-		margin-bottom: 4rem;
+		margin-top: carbon--mini-units(2);
+		margin-bottom: carbon--mini-units(4);
 	}
 
 	.list {
-		max-width: 500px;
-		padding-left: 50px;
+		max-width: carbon--mini-units(63);
+		padding-left: carbon--mini-units(6);
 		column-count: 2;
 
 		@media only screen and (max-width: 1055px) {
-			margin-top: 3rem;
+			margin-top: carbon--mini-units(2);
 		}
+	}
 
-		li {
-			font-weight: bold;
-		}
+	.starter-tab-description {
+		margin-bottom: carbon--mini-units(2);
 	}
 }
