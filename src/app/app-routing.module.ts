@@ -8,10 +8,7 @@ const routes: Routes = [
 	},
 	{
 		path: 'repos',
-		loadChildren: () =>
-			import('./repositories/repositories.module').then(
-				m => m.RepositoriesModule
-		)
+		loadChildren: () => import('./repositories/repositories.module').then(m => m.RepositoriesModule)
 	}
 ];
 
