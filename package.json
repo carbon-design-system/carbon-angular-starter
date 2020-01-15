@@ -24,13 +24,13 @@
 		"@angular/platform-browser": "^8.2.8",
 		"@angular/platform-browser-dynamic": "^8.2.8",
 		"@angular/router": "^8.2.8",
-		"@carbon/icons-angular": "^10.4.0",
+		"@carbon/icons-angular": "^10.7.0",
 		"core-js": "^3.2.1",
 		"rxjs": "^6.5.3",
 		"tslib": "^1.9.0",
 		"zone.js": "~0.9.1",
-		"carbon-components": "^10.6.2",
-		"carbon-components-angular": "^3.17.3"
+		"carbon-components": "^10.9.1",
+		"carbon-components-angular": "^3.32.1"
 	},
 	"devDependencies": {
 		"@angular-devkit/build-angular": "~0.803.6",
