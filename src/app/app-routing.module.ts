@@ -8,7 +8,14 @@ import { Link1Component } from './pages/link1/link1.component';
 const routes: Routes = [
 	{
 		path: '',
-		loadChildren: () => import('./starter-home/starter-home.module').then(m => m.StarterHomeModule)
+		loadChildren: () => import('./home/home.module').then((m) => m.HomeModule)
+	},
+	{
+		path: 'repos',
+		loadChildren: () =>
+		import('./repositories/repositories.module').then(
+			(m) => m.RepositoriesModule
+		),
 	},
 	{
 		path: 'catalog',
@@ -29,7 +36,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-	imports: [RouterModule.forRoot(routes)],
+	imports: [RouterModule.forRoot(routes, { useHash: true })],
 	exports: [RouterModule]
 })
 export class AppRoutingModule { }

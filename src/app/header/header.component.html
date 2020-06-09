@@ -1,4 +1,4 @@
-<ibm-header name="[Platform]">
+<!-- <ibm-header name="[Platform]">
 	<ibm-header-navigation>
 		<ibm-header-item routerLink="catalog">Catalog</ibm-header-item>
 		<ibm-header-item routerLink="docs">Docs</ibm-header-item>
@@ -20,4 +20,20 @@
 			<svg ibmIconAppSwitcher20></svg>
 		</ibm-header-action>
 	</ibm-header-global>
+</ibm-header> -->
+<ibm-header [route]="['/']" name="Carbon Tutorial Angular">
+  <ibm-header-navigation ariaLabel="Carbon Tutorial Angular">
+    <ibm-header-item [route]="['/repos']">Repositories</ibm-header-item>
+  </ibm-header-navigation>
+  <ibm-header-global>
+    <ibm-header-action title="action">
+      <svg icon ibmIconNotification20></svg>
+    </ibm-header-action>
+    <ibm-header-action title="action">
+      <svg icon ibmIconUserAvatar20></svg>
+    </ibm-header-action>
+    <ibm-header-action title="action">
+      <svg icon ibmIconAppSwitcher20></svg>
+    </ibm-header-action>
+  </ibm-header-global>
 </ibm-header>
