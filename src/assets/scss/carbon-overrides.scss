@@ -1,0 +1,27 @@
+// makes the grid fit the entire width of the page
+.bx--grid--full-width {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+// removes excess padding for nested full width grids
+.bx--grid--full-width .bx--grid--full-width {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// removes extraneous row margins in the full width grid
+.bx--grid--full-width .bx--row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+// aligns the tabs to the right
+.landing-page__r2 .bx--tabs__nav {
+  right: 0;
+}
+
+// forces the navigation items to be displayed at all viewport sizes
+.bx--header__nav {
+  display: block;
+}
