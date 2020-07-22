@@ -1,0 +1,86 @@
+pull_request_rules:
+  - name: Close when CI Passes Step 1
+    conditions:
+      - 'status-success=netlify/angular-step-1-carbon-tutorial/deploy-preview'
+    actions:
+      close:
+        message: '👍 Looks good - 🎉 You are one step closer to completion of the Carbon Angular tutorial and earning the digital credential.'
+      label:
+        add: ['status: approved']
+        remove: ['status: needs correction']
+  - name: Comment when CI fails Step 1
+    conditions:
+      - 'status-failure=netlify/angular-step-1-carbon-tutorial/deploy-preview'
+    actions:
+      comment:
+        message: 'Hi 👋 Looks like you are missing something, double check your code, your preview URL should match the [preview](https://www.carbondesignsystem.com/tutorial/angular/step-1#preview) in the tutorial. 🔎'
+      label:
+        add: ['status: needs correction']
+  - name: Close when CI Passes Step 2
+    conditions:
+      - 'status-success=netlify/angular-step-2-carbon-tutorial/deploy-preview'
+    actions:
+      close:
+        message: '👍 Looks good - 🎉 You are one step closer to completion of the Carbon Angular tutorial and earning the digital credential.'
+      label:
+        add: ['status: approved']
+        remove: ['status: needs correction']
+  - name: Comment when CI fails Step 2
+    conditions:
+      - 'status-failure=netlify/angular-step-2-carbon-tutorial/deploy-preview'
+    actions:
+      comment:
+        message: 'Hi 👋 Looks like you are missing something, double check your code, your preview URL should match the [preview](https://www.carbondesignsystem.com/tutorial/angular/step-2#preview) in the tutorial. 🔎'
+      label:
+        add: ['status: needs correction']
+  - name: Close when CI Passes Step 3
+    conditions:
+      - 'status-success=netlify/angular-step-3-carbon-tutorial/deploy-preview'
+    actions:
+      close:
+        message: '👍 Looks good - 🎉 You are one step closer to completion of the Carbon Angular tutorial and earning the digital credential.'
+      label:
+        add: ['status: approved']
+        remove: ['status: needs correction']
+  - name: Comment when CI fails Step 3
+    conditions:
+      - 'status-failure=netlify/angular-step-3-carbon-tutorial/deploy-preview'
+    actions:
+      comment:
+        message: 'Hi 👋 Looks like you are missing something, double check your code, your preview URL should match the [preview](https://www.carbondesignsystem.com/tutorial/angular/step-3#preview) in the tutorial. 🔎'
+      label:
+        add: ['status: needs correction']
+  - name: Close when CI Passes Step 4
+    conditions:
+      - 'status-success=netlify/angular-step-4-carbon-tutorial/deploy-preview'
+    actions:
+      close:
+        message: '👍 Looks good - 🎉 You are one step closer to completion of the Carbon Angular tutorial and earning the digital credential.'
+      label:
+        add: ['status: approved']
+        remove: ['status: needs correction']
+  - name: Comment when CI fails Step 4
+    conditions:
+      - 'status-failure=netlify/angular-step-4-carbon-tutorial/deploy-preview'
+    actions:
+      comment:
+        message: 'Hi 👋 Looks like you are missing something, double check your code, your preview URL should match the [preview](https://www.carbondesignsystem.com/tutorial/angular/step-4#preview) in the tutorial. 🔎'
+      label:
+        add: ['status: needs correction']
+  - name: Close when CI Passes Step 5
+    conditions:
+      - 'status-success=netlify/angular-step-5-carbon-tutorial/deploy-preview'
+    actions:
+      close:
+        message: "👍 Congratulations! You've completed the Carbon tutorial for Angular! Feel free to stop this running application on IBM Cloud to avoid the possibility of incurring any charges 💵 Please see the wrapping up step to apply for your badge! https://www.carbondesignsystem.com/tutorial/angular/wrapping-up"
+      label:
+        add: ['status: approved']
+        remove: ['status: needs correction']
+  - name: Comment when CI fails Step 5
+    conditions:
+      - 'status-failure=netlify/angular-step-5-carbon-tutorial/deploy-preview'
+    actions:
+      comment:
+        message: 'Hi 👋 Looks like you are missing something, double check your the [instructions](https://www.carbondesignsystem.com/tutorial/angular/step-5) in step 5 of the tutorial. 🔎'
+      label:
+        add: ['status: needs correction']
