@@ -4,8 +4,8 @@ Kick start your application development with Carbon Angular.
 
 ## Prerequisites
 
-* [npm](https://www.npmjs.com/) (`brew install npm`)
-* [git](https://git-scm.com/) (`brew install git`)
+* [node](https://nodejs.org/) and [npm](https://www.npmjs.com/) (Included with node)
+* [git](https://git-scm.com/)
 
 ## Download and install
 
@@ -33,7 +33,7 @@ Run `npx ng generate component component-name` to generate a new component. You 
 
 ## Build
 
-Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag (`npm run build -- -prod`) for a production build.
 
 ## Running unit tests
 
