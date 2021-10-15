@@ -10,7 +10,7 @@
 			"es2016"
 		],
 		"outDir": "../out-tsc/spec",
-		"module": "esnext",
+		"module": "es2020",
 		"target": "es2015",
 		"baseUrl": "",
 		"types": [
@@ -20,8 +20,8 @@
 	},
 	"files": [
 		"test.ts",
-	  "polyfills.ts"
-  ],
+		"polyfills.ts"
+	],
 	"include": [
 		"**/*.spec.ts"
 	]

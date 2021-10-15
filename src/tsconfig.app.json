@@ -11,15 +11,12 @@
 		],
 		"outDir": "../out-tsc/app",
 		"target": "es2015",
-		"module": "esnext",
+		"module": "es2020",
 		"baseUrl": "",
 		"types": []
 	},
-	"include": [
-		"**/*"
-	],
-	"exclude": [
-		"test.ts",
-		"**/*.spec.ts"
+	"files": [
+		"main.ts",
+		"polyfills.ts"
 	]
 }
