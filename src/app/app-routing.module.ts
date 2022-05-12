@@ -11,7 +11,7 @@ const routes: Routes = [
     path: '',
     loadChildren: () =>
       import('./starter-home/starter-home.module').then(
-        m => m.StarterHomeModule
+        (m) => m.StarterHomeModule
       ),
   },
   {
