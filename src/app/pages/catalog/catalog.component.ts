@@ -1,10 +1,10 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
 
 @Component({
-	selector: "app-catalog",
-	templateUrl: "./catalog.component.html",
-	styleUrls: ["./catalog.component.scss"],
+  selector: 'app-catalog',
+  templateUrl: './catalog.component.html',
+  styleUrls: ['./catalog.component.scss'],
 })
 export class CatalogComponent {
-	constructor() {}
+  constructor() {}
 }

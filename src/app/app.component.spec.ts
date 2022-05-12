@@ -1,27 +1,33 @@
-import { TestBed, waitForAsync } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-
-import { UIShellModule } from 'carbon-components-angular';
+import {
+  GridModule,
+  IconModule,
+  UIShellModule,
+} from 'carbon-components-angular';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { CatalogComponent } from './pages/catalog/catalog.component';
+import { DocsComponent } from './pages/docs/docs.component';
+import { SupportComponent } from './pages/support/support.component';
 
 describe('AppComponent', () => {
-	beforeEach(waitForAsync(() => {
-		TestBed.configureTestingModule({
-			declarations: [
-				AppComponent,
-				HeaderComponent
-			],
-			imports: [
-				RouterTestingModule,
-				UIShellModule
-			]
-		}).compileComponents();
-	}));
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [
+        AppComponent,
+        HeaderComponent,
+        CatalogComponent,
+        DocsComponent,
+        SupportComponent,
+      ],
+      imports: [RouterTestingModule, IconModule, UIShellModule, GridModule],
+    }).compileComponents();
+  });
 
-	it('should create the app', waitForAsync(() => {
-		const fixture = TestBed.createComponent(AppComponent);
-		const app = fixture.debugElement.componentInstance;
-		expect(app).toBeTruthy();
-	}));
+  it('should create the app', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app).toBeTruthy();
+  });
 });

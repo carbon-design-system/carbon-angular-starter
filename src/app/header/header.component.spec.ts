@@ -1,27 +1,26 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-
-import { HeaderComponent } from './header.component';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { UIShellModule } from 'carbon-components-angular';
 
+import { HeaderComponent } from './header.component';
+
 describe('HeaderComponent', () => {
-	let component: HeaderComponent;
-	let fixture: ComponentFixture<HeaderComponent>;
+  let component: HeaderComponent;
+  let fixture: ComponentFixture<HeaderComponent>;
 
-	beforeEach(waitForAsync(() => {
-		TestBed.configureTestingModule({
-			declarations: [ HeaderComponent ],
-			imports: [ UIShellModule ]
-		})
-		.compileComponents();
-	}));
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [HeaderComponent],
+      imports: [UIShellModule],
+    }).compileComponents();
+  });
 
-	beforeEach(() => {
-		fixture = TestBed.createComponent(HeaderComponent);
-		component = fixture.componentInstance;
-		fixture.detectChanges();
-	});
+  beforeEach(() => {
+    fixture = TestBed.createComponent(HeaderComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
 
-	it('should create', () => {
-		expect(component).toBeTruthy();
-	});
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
 });
