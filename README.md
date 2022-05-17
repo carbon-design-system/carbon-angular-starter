@@ -1,4 +1,23 @@
-# CarbonAngularStarterNew
+# CARBON ANGULAR STARTER
+
+Kick start your application development with Carbon Angular.
+
+## Prerequisites
+
+* [node](https://nodejs.org/) and [npm](https://www.npmjs.com/) (Included with node)
+* [git](https://git-scm.com/)
+
+## Download and install
+
+Run the following in the terminal:
+
+```bash
+# to download
+git clone https://github.com/carbon-design-system/carbon-angular-starter.git
+# to install
+cd carbon-angular-starter
+npm i
+```
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
 
