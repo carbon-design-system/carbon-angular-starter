@@ -19,6 +19,10 @@ cd carbon-angular-starter
 npm i
 ```
 
+## How to use components
+
+Look at the [component library](https://angular.carbondesignsystem.com/) and [developer documentation](https://angular.carbondesignsystem.com/documentation/).
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
 
 ## Development server
