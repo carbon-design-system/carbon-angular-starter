@@ -3,7 +3,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import {
 	GridModule,
 	IconModule,
-	UIShellModule,
+	UIShellModule
 } from 'carbon-components-angular';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -19,14 +19,14 @@ describe('AppComponent', () => {
 				HeaderComponent,
 				CatalogComponent,
 				DocsComponent,
-				SupportComponent,
+				SupportComponent
 			],
 			imports: [
 				RouterTestingModule,
 				IconModule,
 				UIShellModule,
-				GridModule,
-			],
+				GridModule
+			]
 		}).compileComponents();
 	});
 

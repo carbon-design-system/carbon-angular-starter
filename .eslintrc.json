@@ -13,6 +13,7 @@
 				"plugin:@angular-eslint/template/process-inline-templates"
 			],
 			"rules": {
+				"comma-dangle": [2, "never"],
 				"@angular-eslint/directive-selector": [
 					"error",
 					{

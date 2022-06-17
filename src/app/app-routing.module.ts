@@ -9,28 +9,28 @@ const routes: Routes = [
 	// Lazy loading route
 	{
 		path: '',
-		loadChildren: () => import('./starter-home/starter-home.module').then((m) => m.StarterHomeModule),
+		loadChildren: () => import('./starter-home/starter-home.module').then((m) => m.StarterHomeModule)
 	},
 	{
 		path: 'catalog',
-		component: CatalogComponent,
+		component: CatalogComponent
 	},
 	{
 		path: 'docs',
-		component: DocsComponent,
+		component: DocsComponent
 	},
 	{
 		path: 'support',
-		component: SupportComponent,
+		component: SupportComponent
 	},
 	{
 		path: 'link1',
-		component: Link1Component,
-	},
+		component: Link1Component
+	}
 ];
 
 @NgModule({
 	imports: [RouterModule.forRoot(routes)],
-	exports: [RouterModule],
+	exports: [RouterModule]
 })
 export class AppRoutingModule {}

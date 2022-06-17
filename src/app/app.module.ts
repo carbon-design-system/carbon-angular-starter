@@ -9,7 +9,7 @@ import {
 	GridModule,
 	IconModule,
 	IconService,
-	UIShellModule,
+	UIShellModule
 } from 'carbon-components-angular';
 
 // @carbon/icons
@@ -31,17 +31,17 @@ import { Link1Component } from './pages/link1/link1.component';
 		CatalogComponent,
 		DocsComponent,
 		SupportComponent,
-		Link1Component,
+		Link1Component
 	],
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
 		IconModule,
 		UIShellModule,
-		GridModule,
+		GridModule
 	],
 	providers: [],
-	bootstrap: [AppComponent],
+	bootstrap: [AppComponent]
 })
 export class AppModule {
 	constructor(protected iconService: IconService) {
