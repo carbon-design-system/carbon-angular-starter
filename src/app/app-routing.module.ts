@@ -9,10 +9,7 @@ const routes: Routes = [
   // Lazy loading route
   {
     path: '',
-    loadChildren: () =>
-      import('./starter-home/starter-home.module').then(
-        (m) => m.StarterHomeModule
-      ),
+    loadChildren: () => import('./starter-home/starter-home.module').then((m) => m.StarterHomeModule),
   },
   {
     path: 'catalog',
