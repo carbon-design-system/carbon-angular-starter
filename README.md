@@ -4,8 +4,8 @@ Kick start your application development with Carbon Angular.
 
 ## Prerequisites
 
-* [node](https://nodejs.org/) and [npm](https://www.npmjs.com/) (Included with node)
-* [git](https://git-scm.com/)
+-   [node](https://nodejs.org/) and [npm](https://www.npmjs.com/) (Included with node)
+-   [git](https://git-scm.com/)
 
 ## Download and install
 

@@ -6,7 +6,7 @@ import {
 	GridModule,
 	ListModule,
 	TabsModule,
-	TilesModule
+	TilesModule,
 } from 'carbon-components-angular';
 
 describe('HomeComponent', () => {
@@ -15,15 +15,9 @@ describe('HomeComponent', () => {
 
 	beforeEach(waitForAsync(() => {
 		TestBed.configureTestingModule({
-			imports: [
-				GridModule,
-				ListModule,
-				TabsModule,
-				TilesModule
-			],
-			declarations: [ StarterHomeComponent ]
-		})
-		.compileComponents();
+			imports: [GridModule, ListModule, TabsModule, TilesModule],
+			declarations: [StarterHomeComponent],
+		}).compileComponents();
 	}));
 
 	beforeEach(() => {

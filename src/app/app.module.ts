@@ -6,10 +6,10 @@ import { AppComponent } from './app.component';
 
 // carbon-components-angular
 import {
-  GridModule,
-  IconModule,
-  IconService,
-  UIShellModule,
+	GridModule,
+	IconModule,
+	IconService,
+	UIShellModule,
 } from 'carbon-components-angular';
 
 // @carbon/icons
@@ -25,26 +25,26 @@ import { SupportComponent } from './pages/support/support.component';
 import { Link1Component } from './pages/link1/link1.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    CatalogComponent,
-    DocsComponent,
-    SupportComponent,
-    Link1Component,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    IconModule,
-    UIShellModule,
-    GridModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
+	declarations: [
+		AppComponent,
+		HeaderComponent,
+		CatalogComponent,
+		DocsComponent,
+		SupportComponent,
+		Link1Component,
+	],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		IconModule,
+		UIShellModule,
+		GridModule,
+	],
+	providers: [],
+	bootstrap: [AppComponent],
 })
 export class AppModule {
-  constructor(protected iconService: IconService) {
-    iconService.registerAll([Notification16, UserAvatar16, Apps16]);
-  }
+	constructor(protected iconService: IconService) {
+		iconService.registerAll([Notification16, UserAvatar16, Apps16]);
+	}
 }
