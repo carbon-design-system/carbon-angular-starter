@@ -8,6 +8,7 @@ if (environment.production) {
 	enableProdMode();
 }
 
+// If you want to activate the service worker just follow the instructions at https://angular.io/guide/service-worker-getting-started
 platformBrowserDynamic()
 	.bootstrapModule(AppModule)
 	.catch((err) => console.error(err));
