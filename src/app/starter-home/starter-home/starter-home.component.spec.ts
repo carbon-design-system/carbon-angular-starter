@@ -15,7 +15,13 @@ describe('HomeComponent', () => {
 
 	beforeEach(waitForAsync(() => {
 		TestBed.configureTestingModule({
-			imports: [GridModule, ListModule, TabsModule, TilesModule],
+			imports: [
+			    GridModule, 
+			    ListModule, 
+			    TabsModule, 
+			    TilesModule
+		      ],
+			
 			declarations: [StarterHomeComponent]
 		}).compileComponents();
 	}));
