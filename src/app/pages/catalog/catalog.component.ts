@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
 	styleUrls: ['./catalog.component.scss']
 })
 export class CatalogComponent {
-	constructor() {}
 }
