@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
 	styleUrls: ['./support.component.scss']
 })
 export class SupportComponent {
-	constructor() {}
 }
