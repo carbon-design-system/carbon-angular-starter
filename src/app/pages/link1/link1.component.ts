@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
 	styleUrls: ['./link1.component.scss']
 })
 export class Link1Component {
-	constructor() {}
 }
