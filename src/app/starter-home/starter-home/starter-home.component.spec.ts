@@ -21,7 +21,6 @@ describe('HomeComponent', () => {
 			    TabsModule, 
 			    TilesModule
 		      ],
-			
 			declarations: [StarterHomeComponent]
 		}).compileComponents();
 	}));
