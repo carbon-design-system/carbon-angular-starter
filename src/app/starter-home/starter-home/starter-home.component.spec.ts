@@ -16,14 +16,13 @@ describe('HomeComponent', () => {
 	beforeEach(waitForAsync(() => {
 		TestBed.configureTestingModule({
 			imports: [
-				GridModule,
-				ListModule,
-				TabsModule,
-				TilesModule
-			],
-			declarations: [ StarterHomeComponent ]
-		})
-		.compileComponents();
+			    GridModule, 
+			    ListModule, 
+			    TabsModule, 
+			    TilesModule
+		      ],
+			declarations: [StarterHomeComponent]
+		}).compileComponents();
 	}));
 
 	beforeEach(() => {

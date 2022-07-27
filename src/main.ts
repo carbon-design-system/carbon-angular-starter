@@ -8,13 +8,7 @@ if (environment.production) {
 	enableProdMode();
 }
 
-// Uncomment the following lines to activate the service worker
-// if (navigator.serviceWorker) {
-// 	navigator.serviceWorker.register('sw.js').then(() => {
-// 		console.log('Service worker installed')
-// 	}, err => {
-// 		console.error('Service worker error:', err);
-// 	});
-// }
-
-platformBrowserDynamic().bootstrapModule(AppModule);
+// If you want to activate the service worker just follow the instructions at https://angular.io/guide/service-worker-getting-started
+platformBrowserDynamic()
+	.bootstrapModule(AppModule)
+	.catch((err) => console.error(err));

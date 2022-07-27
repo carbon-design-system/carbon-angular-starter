@@ -21,4 +21,4 @@ import { StarterHomeRoutingModule } from './starter-home-routing.module';
 	],
 	declarations: [StarterHomeComponent]
 })
-export class StarterHomeModule { }
+export class StarterHomeModule {}
