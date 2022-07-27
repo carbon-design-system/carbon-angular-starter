@@ -7,5 +7,4 @@ import { Component, HostBinding } from '@angular/core';
 })
 export class HeaderComponent {
 	@HostBinding('class.bx--header') headerClass = true;
-
 }
