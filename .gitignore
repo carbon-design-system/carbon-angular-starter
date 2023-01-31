@@ -1,5 +1,8 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+# don't track angular cache et al
+.angular
+
 # compiled output
 /dist
 /tmp

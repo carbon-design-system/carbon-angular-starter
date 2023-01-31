@@ -4,6 +4,11 @@
 // $carbon--theme: $carbon--theme--g90;
 // $carbon--theme: $carbon--theme--g10;
 
-@import "~carbon-components/scss/globals/scss/styles";
+// THIS FATALLY BROKE EVERYTHING WHEN USING THE MAINLY DOCUMENTED VALUE!
+// (@import "~carbon-components/scss/globals/scss/styles"; OR @import "carbon-components/scss/globals/scss/styles";)
+// I guess most setups will do too.
+// Perhaps it is obvious but I was so busy reading + following the docs and examples that I thought maybe something else was awry
+// Took a while to figure it out, found it buried quite deep in some docs (not v easy to find!)
+@import "node_modules/carbon-components/scss/globals/scss/styles";
 
 @import "./assets/scss/carbon-override.scss";
