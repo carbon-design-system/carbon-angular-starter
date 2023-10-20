@@ -120,8 +120,7 @@
 				}
 			}
 		}
-	},
-	"defaultProject": "carbon-angular-starter",
+  },
 	"schematics": {
 		"@schematics/angular:component": {
 			"prefix": "app",
