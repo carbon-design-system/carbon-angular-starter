@@ -1,19 +1,20 @@
 {
 	"compilerOptions": {
-		"sourceMap": true,
-		"declaration": false,
+    "sourceMap": true,
+    "declaration": false,
     "moduleResolution": "node",
-		"experimentalDecorators": true,
-		"lib": [
-			"es2016",
-			"dom"
-		],
-		"outDir": "../out-tsc/app",
-		"target": "es2020",
-		"module": "es2020",
-		"baseUrl": "",
-		"types": []
-	},
+    "experimentalDecorators": true,
+    "lib": [
+      "es2016",
+      "dom"
+    ],
+    "outDir": "../out-tsc/app",
+    "target": "ES2022",
+    "module": "es2020",
+    "baseUrl": "",
+    "types": [],
+    "useDefineForClassFields": false
+  },
 	"files": [
 		"main.ts",
 		"polyfills.ts"

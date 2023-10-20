@@ -1,22 +1,23 @@
 {
 	"compilerOptions": {
-		"sourceMap": true,
-		"declaration": false,
+    "sourceMap": true,
+    "declaration": false,
     "moduleResolution": "node",
-		"experimentalDecorators": true,
-		"lib": [
-			"dom",
-			"es2016"
-		],
-		"outDir": "../out-tsc/spec",
-		"module": "es2020",
-		"target": "es2020",
-		"baseUrl": "",
-		"types": [
-			"jasmine",
-			"node"
-		]
-	},
+    "experimentalDecorators": true,
+    "lib": [
+      "dom",
+      "es2016"
+    ],
+    "outDir": "../out-tsc/spec",
+    "module": "es2020",
+    "target": "ES2022",
+    "baseUrl": "",
+    "types": [
+      "jasmine",
+      "node"
+    ],
+    "useDefineForClassFields": false
+  },
 	"files": [
 		"test.ts",
 		"polyfills.ts"
