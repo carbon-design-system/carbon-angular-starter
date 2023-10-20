@@ -2,8 +2,7 @@
 	"compilerOptions": {
 		"sourceMap": true,
 		"declaration": false,
-		"moduleResolution": "node",
-		"emitDecoratorMetadata": true,
+    "moduleResolution": "node",
 		"experimentalDecorators": true,
 		"lib": [
 			"es2016",
