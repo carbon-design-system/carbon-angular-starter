@@ -1,21 +1,21 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "importHelpers": true,
-    "outDir": "./dist/out-tsc",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "target": "es2015",
-    "lib": [
-      "es2016",
-      "dom"
-    ],
-    "module": "es2020",
-    "baseUrl": "./"
-  },
-  "angularCompilerOptions": {
-	  "strictTemplates": true
-  }
+	"compileOnSave": false,
+	"compilerOptions": {
+		"importHelpers": true,
+		"outDir": "./dist/out-tsc",
+		"sourceMap": true,
+		"declaration": false,
+		"moduleResolution": "node",
+		"experimentalDecorators": true,
+		"target": "es2015",
+		"lib": [
+			"es2016",
+			"dom"
+		],
+		"module": "es2020",
+		"baseUrl": "./"
+	},
+	"angularCompilerOptions": {
+		"strictTemplates": true
+	}
 }
