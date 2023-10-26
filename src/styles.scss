@@ -1,9 +1,30 @@
-// To change the theme uncomment the below import and which ever carbon theme you want to use
-// @import '~carbon-components/scss/globals/scss/vendor/@carbon/elements/scss/themes/theme-maps';
-// $carbon--theme: $carbon--theme--g100;
-// $carbon--theme: $carbon--theme--g90;
-// $carbon--theme: $carbon--theme--g10;
+@use "@carbon/styles/scss/config" with (
+	// Use flexbox for grid - stick to CSS Grid or Flexbox
+	// CSS Grid has become the default grid system in v11
+	$use-flexbox-grid: true
+);
 
-@import "carbon-components/scss/globals/scss/styles";
+@use "@carbon/styles";
 
-@import "./assets/scss/carbon-override.scss";
+.white {
+	@include styles.theme(styles.$white);
+}
+
+.g10 {
+	@include styles.theme(styles.$g10);
+}
+
+.g90 {
+	@include styles.theme(styles.$g90);
+}
+
+.g100 {
+	@include styles.theme(styles.$g100);
+}
+
+
+// Want to use only one theme? Add the css variables directly in root
+
+// html {
+// 	@include styles.theme(styles.$white);
+// }
