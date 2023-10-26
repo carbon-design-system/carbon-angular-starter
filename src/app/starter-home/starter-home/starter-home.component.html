@@ -23,6 +23,15 @@
 			</ul>
 		</div>
 	</div>
+	<div class="theme-picker">
+		<p class="subtitle">To change the theme, select from the radio items below:</p>
+		<cds-radio-group legend="Theme selector:" ariaLabel="radiogroup" (change)="onThemeChange($event)">
+			<cds-radio value="white" [checked]="true">White</cds-radio>
+			<cds-radio value="g10">Grey 10</cds-radio>
+			<cds-radio value="g90">Grey 90</cds-radio>
+			<cds-radio value="g100">Grey 100</cds-radio>
+		</cds-radio-group>
+	</div>
 
 	<cds-tabs [isNavigation]="false">
 		<cds-tab heading="Carbon components angular">
