@@ -7,26 +7,26 @@
 	}
 
 	.subtitle {
-		margin-top: carbon--mini-units(2);
+		margin-top: 1rem;
 		@include type-style("productive-heading-02");
 	}
 
 	.body-text {
-		margin-top: carbon--mini-units(2);
-		margin-bottom: carbon--mini-units(4);
+		margin-top: 1rem;
+		margin-bottom: 2rem;
 	}
 
 	.list {
-		max-width: carbon--mini-units(63);
-		padding-left: carbon--mini-units(6);
+		max-width: 31.5rem;
+		padding-left: 3rem;
 		column-count: 2;
 
 		@media only screen and (max-width: 1055px) {
-			margin-top: carbon--mini-units(2);
+			margin-top: 1rem;
 		}
 	}
 
 	.starter-tab-description {
-		margin-bottom: carbon--mini-units(2);
+		margin-bottom: 1rem;
 	}
 }
