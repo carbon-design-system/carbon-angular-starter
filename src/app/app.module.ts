@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 // carbon-components-angular default imports
-import { IconModule, IconService, UIShellModule } from 'carbon-components-angular';
+import { IconModule, IconService, ThemeModule, UIShellModule } from 'carbon-components-angular';
 
 // Icons
 import Notification20 from '@carbon/icons/es/notification/20';
@@ -34,7 +34,8 @@ import { Link1Component } from './pages/link1/link1.component';
 		FormsModule,
 		AppRoutingModule,
 		UIShellModule,
-		IconModule
+		IconModule,
+		ThemeModule
 	],
 	bootstrap: [AppComponent]
 })
