@@ -7,9 +7,12 @@ import { AppComponent } from './app.component';
 
 // carbon-components-angular default imports
 import { IconModule, IconService, UIShellModule } from 'carbon-components-angular';
+
+// Icons
 import Notification20 from '@carbon/icons/es/notification/20';
 import UserAvatar20 from '@carbon/icons/es/user--avatar/20';
-import AppSwitcher20 from '@carbon/icons/es/app-switcher/20';
+
+// Components
 import { HeaderComponent } from './header/header.component';
 import { CatalogComponent } from './pages/catalog/catalog.component';
 import { DocsComponent } from './pages/docs/docs.component';
@@ -39,8 +42,7 @@ export class AppModule {
 	constructor(protected iconService: IconService) {
 		iconService.registerAll([
 			Notification20,
-			UserAvatar20,
-			AppSwitcher20
+			UserAvatar20
 		]);
 	}
 }
