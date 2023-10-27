@@ -8,7 +8,7 @@ import { Component, OnInit, Renderer2, inject } from '@angular/core';
 })
 export class StarterHomeComponent implements OnInit {
 
-	theme: string = 'white';
+	theme = 'white';
 
 	private document = inject(DOCUMENT);
 	private renderer = inject(Renderer2);
