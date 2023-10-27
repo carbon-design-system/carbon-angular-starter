@@ -37,7 +37,7 @@ Run `npm run build` to build the project. The build artifacts will be stored in 
 
 ## Running unit tests
 
-Run `npm test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `npm test` to execute the unit tests via [Jest](https://jestjs.io/).
 
 ## Running end-to-end tests
 
