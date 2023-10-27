@@ -6,8 +6,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
-    "test:once": "ng test --watch=false",
+    "test": "jest",
+    "test:once": "jest --watch",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },

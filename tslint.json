@@ -10,12 +10,14 @@
 			"check-space"
 		],
 		"curly": true,
-    "eofline": true,
-    "deprecation": {
-      "severity": "warning"
-    },
+		"eofline": true,
+		"deprecation": {
+			"severity": "warning"
+		},
 		"forin": true,
-		"import-blacklist": [true],
+		"import-blacklist": [
+			true
+		],
 		"import-spacing": true,
 		"indent": [
 			true,
@@ -67,13 +69,16 @@
 		"no-empty": false,
 		"no-empty-interface": true,
 		"no-eval": true,
-		"no-inferrable-types": [true, "ignore-params"],
+		"no-inferrable-types": [
+			true,
+			"ignore-params"
+		],
 		"no-shadowed-variable": true,
 		"no-string-literal": false,
 		"no-string-throw": true,
 		"no-switch-case-fall-through": true,
 		"no-trailing-whitespace": true,
-    "no-unused-expression": true,
+		"no-unused-expression": true,
 		"no-var-keyword": true,
 		"object-literal-sort-keys": false,
 		"one-line": [
@@ -127,11 +132,25 @@
 			"check-type",
 			"check-preblock"
 		],
-
 		// [ENABLED, "attribute" | "element", "selectorPrefix" | ["listOfPrefixes"], "camelCase" | "kebab-case"]
-		"directive-selector": [true, "attribute", ["app", "test"], "camelCase"],
-		"component-selector": [true, "element", ["app", "test"], "kebab-case"],
-
+		"directive-selector": [
+			true,
+			"attribute",
+			[
+				"app",
+				"test"
+			],
+			"camelCase"
+		],
+		"component-selector": [
+			true,
+			"element",
+			[
+				"app",
+				"test"
+			],
+			"kebab-case"
+		],
 		"no-inputs-metadata-property": true,
 		"no-outputs-metadata-property": true,
 		"no-host-metadata-property": true,
@@ -141,7 +160,6 @@
 		"no-forward-ref": true,
 		"use-lifecycle-interface": true,
 		"use-pipe-transform-interface": true,
-
 		"templates-use-public": true,
 		"invoke-injectable": true
 	}
