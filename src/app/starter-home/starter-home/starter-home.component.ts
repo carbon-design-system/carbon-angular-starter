@@ -18,7 +18,7 @@ export class StarterHomeComponent implements OnInit {
 		this.renderer.addClass(this.document.body, this.theme);
 	}
 
-	onThemeChange({ value }) {
+	onThemeChange({ value }: { value: string }) {
 		// Remove current assigned class then add updated class
 		this.renderer.removeClass(this.document.body, this.theme);
 		this.theme = value;
