@@ -7,8 +7,8 @@
 	}
 
 	.subtitle {
-		margin-top: 1rem;
 		@include type-style("productive-heading-02");
+		margin-bottom: 1rem;
 	}
 
 	.body-text {
@@ -37,5 +37,28 @@
 	cds-tabs {
 		display: block;
 		margin-top: 3rem;
+	}
+
+	.builder-heading {
+		@include type-style("productive-heading-04");
+		margin-bottom: 1rem;
+	}
+
+	.builder-points {
+		margin-bottom: 2rem;
+		padding-left: 1rem;
+	}
+
+	.builder-image {
+		width: inherit;
+	}
+
+	ul {
+		list-style-type: disc;
+		li::before {
+			content: ''
+		}
+		line-height: 1.75rem;
+		font-size: 1.25rem;
 	}
 }

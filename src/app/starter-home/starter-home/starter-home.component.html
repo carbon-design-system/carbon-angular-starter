@@ -1,8 +1,8 @@
 <div class="starter-home" cdsGrid>
 	<h1 class="title">Congratulations, <br>you made it!</h1>
-	<p class="subtitle">You have offically built your first Carbon Angular app</p>
 	<div class="body-text" cdsRow>
 		<div cdsCol [columnNumbers]="{'lg': 6, 'md': 12, 'sm': 12}">
+			<p class="subtitle">You have offically built your first Carbon Angular app</p>
 			<p>
 				This is an Angular CLI app configured for use with Carbon.
 				It includes the grid, list, tab and tile components. Feel free
@@ -33,26 +33,77 @@
 		</cds-radio-group>
 	</div>
 
-	<cds-tabs [isNavigation]="false">
-		<cds-tab heading="Carbon components angular">
-			<p class="starter-tab-description">
-				A component library that gives developers a collection of
-				re-usable angular components that they can use for building
-				websites and user interfaces
-			</p>
-			<p>Other useful resources</p><br>
+	<cds-tabs [isNavigation]="true">
+		<cds-tab heading="Carbon UI builder">
+			<div ibmRow>
+				<div ibmCol [columnNumbers]="{'lg': 8, 'md': 12, 'sm': 12}">
+					<p class="starter-tab-description">
+						Carbon UI builder is a visual builder tool for Carbon components allowing users to build product
+						pages in a fraction of time than it normally takes them.
+					</p>
+					<p class="builder-heading">Benefits</p>
+					<ul cdsList class="builder-points">
+						<li cdsListItem>Time to market</li>
+						<li cdsListItem>Quick UI building</li>
+						<li cdsListItem>Deployless (Painless) UI updates</li>
+						<li cdsListItem>Easy framework upgrades</li>
+						<li cdsListItem>Users can customize their experiences</li>
+						<li cdsListItem>Export to human-readable code</li>
+					</ul>
+					<button cdsButton size="2xl" (click)="navigateToBuilder()">
+						Try UI builder
+						<svg class="cds--btn__icon" cdsIcon="carbon--ui-builder"></svg>
+					</button>
+				</div>
+				<div ibmCol [columnNumbers]="{'lg': 8, 'md': 8, 'sm': 12}">
+					<img src="/assets/images/builder.png" alt="builder" class="builder-image" />
+				</div>
+			</div>
+
+			<p class="subtitle">Other useful resources</p><br>
 			<div cdsRow>
 				<div cdsCol [columnNumbers]="{'md': 2, 'sm': 12}">
-					<cds-clickable-tile href="https://github.com/IBM/carbon-components-angular" target="_blank">Repository</cds-clickable-tile>
+					<cds-clickable-tile href="https://github.com/IBM/carbon-ui-builder"
+						target="_blank">Repository</cds-clickable-tile>
 				</div>
 				<div cdsCol [columnNumbers]="{'md': 2, 'sm': 12}">
-					<cds-clickable-tile href="https://angular.carbondesignsystem.com/" target="_blank">Component Library</cds-clickable-tile>
+					<cds-clickable-tile href="https://builder.carbondesignsystem.com/"
+						target="_blank">Application</cds-clickable-tile>
 				</div>
 				<div cdsCol [columnNumbers]="{'md': 2, 'sm': 12}">
-					<cds-clickable-tile href="https://angular.carbondesignsystem.com/documentation/" target="_blank">Documentation</cds-clickable-tile>
+					<cds-clickable-tile href="https://github.com/IBM/carbon-ui-builder/discussions"
+						target="_blank">Discussion</cds-clickable-tile>
 				</div>
 				<div cdsCol [columnNumbers]="{'md': 2, 'sm': 12}">
-					<cds-clickable-tile href="https://www.npmjs.com/package/carbon-components-angular" target="_blank">NPM</cds-clickable-tile>
+					<cds-clickable-tile href="https://github.com/IBM/carbon-ui-builder/issues/new/choose"
+						target="_blank">Report an issue</cds-clickable-tile>
+				</div>
+
+			</div>
+		</cds-tab>
+		<cds-tab heading="Carbon components angular">
+			<p class="starter-tab-description">
+				Carbon components angular is a component library that gives developers a collection of
+				re-usable angular components that they can use for building
+				websites and user interfaces.
+			</p>
+			<p class="subtitle">Other useful resources</p><br>
+			<div cdsRow>
+				<div cdsCol [columnNumbers]="{'md': 2, 'sm': 12}">
+					<cds-clickable-tile href="https://github.com/IBM/carbon-components-angular"
+						target="_blank">Repository</cds-clickable-tile>
+				</div>
+				<div cdsCol [columnNumbers]="{'md': 2, 'sm': 12}">
+					<cds-clickable-tile href="https://angular.carbondesignsystem.com/" target="_blank">Component
+						Library</cds-clickable-tile>
+				</div>
+				<div cdsCol [columnNumbers]="{'md': 2, 'sm': 12}">
+					<cds-clickable-tile href="https://angular.carbondesignsystem.com/documentation/"
+						target="_blank">Documentation</cds-clickable-tile>
+				</div>
+				<div cdsCol [columnNumbers]="{'md': 2, 'sm': 12}">
+					<cds-clickable-tile href="https://www.npmjs.com/package/carbon-components-angular"
+						target="_blank">NPM</cds-clickable-tile>
 				</div>
 			</div>
 		</cds-tab>
@@ -61,34 +112,23 @@
 				Carbon Charts is an open-source JavaScript data visualization
 				library used as a functional component of IBM's Carbon Design System.
 			</p>
-			<p>Other useful resources</p><br>
+			<p class="subtitle">Other useful resources</p><br>
 			<div cdsRow>
 				<div cdsCol [columnNumbers]="{'md': 2, 'sm': 12}">
-					<cds-clickable-tile href="https://github.com/IBM/carbon-charts" target="_blank">Repository</cds-clickable-tile>
+					<cds-clickable-tile href="https://github.com/IBM/carbon-charts"
+						target="_blank">Repository</cds-clickable-tile>
 				</div>
 				<div cdsCol [columnNumbers]="{'md': 2, 'sm': 12}">
-					<cds-clickable-tile href="https://carbon-design-system.github.io/carbon-charts/" target="_blank">Demo</cds-clickable-tile>
+					<cds-clickable-tile href="https://carbon-design-system.github.io/carbon-charts/"
+						target="_blank">Demo</cds-clickable-tile>
 				</div>
 				<div cdsCol [columnNumbers]="{'md': 2, 'sm': 12}">
-					<cds-clickable-tile href="https://carbon-design-system.github.io/carbon-charts/documentation/" target="_blank">Documentation</cds-clickable-tile>
+					<cds-clickable-tile href="https://carbon-design-system.github.io/carbon-charts/documentation/"
+						target="_blank">Documentation</cds-clickable-tile>
 				</div>
 				<div cdsCol [columnNumbers]="{'md': 2, 'sm': 12}">
-					<cds-clickable-tile href="https://www.npmjs.com/package/@carbon/charts" target="_blank">NPM</cds-clickable-tile>
-				</div>
-			</div>
-		</cds-tab>
-		<cds-tab heading="Carbon builder">
-			<p class="starter-tab-description">
-				A visual builder tool for Carbon UI components allowing users to build product
-				pages in a fraction of time than it normally takes them.
-			</p>
-			<p>Other useful resources</p><br>
-			<div cdsRow>
-				<div cdsCol [columnNumbers]="{'md': 2, 'sm': 12}">
-					<cds-clickable-tile href="https://github.com/IBM/carbon-ui-builder" target="_blank">Repository</cds-clickable-tile>
-				</div>
-				<div cdsCol [columnNumbers]="{'md': 2, 'sm': 12}">
-					<cds-clickable-tile href="https://builder.carbondesignsystem.com/" target="_blank">Application</cds-clickable-tile>
+					<cds-clickable-tile href="https://www.npmjs.com/package/@carbon/charts"
+						target="_blank">NPM</cds-clickable-tile>
 				</div>
 			</div>
 		</cds-tab>

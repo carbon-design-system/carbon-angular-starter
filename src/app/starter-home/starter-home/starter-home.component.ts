@@ -24,4 +24,8 @@ export class StarterHomeComponent implements OnInit {
 		this.theme = value;
 		this.renderer.addClass(this.document.body, this.theme);
 	}
+
+	navigateToBuilder() {
+		window.open('https://builder.carbondesignsystem.com/', '_blank');
+	}
 }
