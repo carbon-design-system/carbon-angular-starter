@@ -5,6 +5,7 @@ import { StarterHomeComponent } from './starter-home.component';
 import {
 	GridModule,
 	ListModule,
+	RadioModule,
 	TabsModule,
 	TilesModule
 } from 'carbon-components-angular';
@@ -19,11 +20,12 @@ describe('HomeComponent', () => {
 				GridModule,
 				ListModule,
 				TabsModule,
-				TilesModule
+				TilesModule,
+				RadioModule
 			],
-			declarations: [ StarterHomeComponent ]
+			declarations: [StarterHomeComponent]
 		})
-		.compileComponents();
+			.compileComponents();
 	}));
 
 	beforeEach(() => {

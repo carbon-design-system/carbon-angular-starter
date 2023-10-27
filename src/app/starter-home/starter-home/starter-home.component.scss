@@ -1,5 +1,5 @@
-@import "~carbon-components/scss/globals/scss/typography";
-@import "~carbon-components/scss/globals/scss/spacing";
+@import "@carbon/layout";
+@import "@carbon/type";
 
 .starter-home {
 	.title {
@@ -7,26 +7,58 @@
 	}
 
 	.subtitle {
-		margin-top: carbon--mini-units(2);
 		@include type-style("productive-heading-02");
+		margin-bottom: 1rem;
 	}
 
 	.body-text {
-		margin-top: carbon--mini-units(2);
-		margin-bottom: carbon--mini-units(4);
+		margin-top: 1rem;
+		margin-bottom: 2rem;
 	}
 
 	.list {
-		max-width: carbon--mini-units(63);
-		padding-left: carbon--mini-units(6);
+		max-width: 31.5rem;
+		padding-left: 3rem;
 		column-count: 2;
 
 		@media only screen and (max-width: 1055px) {
-			margin-top: carbon--mini-units(2);
+			margin-top: 1rem;
 		}
 	}
 
 	.starter-tab-description {
-		margin-bottom: carbon--mini-units(2);
+		margin-bottom: 1rem;
+	}
+
+	.theme-picker {
+		margin: 1rem 0;
+	}
+
+	cds-tabs {
+		display: block;
+		margin-top: 3rem;
+	}
+
+	.builder-heading {
+		@include type-style("productive-heading-04");
+		margin-bottom: 1rem;
+	}
+
+	.builder-points {
+		margin-bottom: 2rem;
+		padding-left: 1rem;
+	}
+
+	.builder-image {
+		width: inherit;
+	}
+
+	ul {
+		list-style-type: disc;
+		li::before {
+			content: ''
+		}
+		line-height: 1.75rem;
+		font-size: 1.25rem;
 	}
 }

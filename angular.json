@@ -1,8 +1,12 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "cli": {
-    "analytics": false
-  },
+	"$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+	"cli": {
+		"analytics": false,
+		"schematicCollections": [
+			"@cypress/schematic",
+			"@schematics/angular"
+		]
+	},
 	"version": 1,
 	"newProjectRoot": "projects",
 	"projects": {
@@ -17,14 +21,22 @@
 						"outputPath": "dist",
 						"index": "src/index.html",
 						"main": "src/main.ts",
-						"tsConfig": "src/tsconfig.app.json",
+						"tsConfig": "./tsconfig.app.json",
 						"polyfills": "src/polyfills.ts",
 						"assets": [
-							"src/favicon.ico"
+							"src/favicon.ico",
+							"src/assets"
 						],
-						"styles": ["src/styles.scss"],
+						"styles": [
+							"src/styles.scss"
+						],
 						"scripts": [],
-						"aot": true
+						"vendorChunk": true,
+						"extractLicenses": false,
+						"buildOptimizer": false,
+						"sourceMap": true,
+						"optimization": false,
+						"namedChunks": true
 					},
 					"configurations": {
 						"production": {
@@ -48,7 +60,8 @@
 								}
 							]
 						}
-					}
+					},
+					"defaultConfiguration": ""
 				},
 				"serve": {
 					"builder": "@angular-devkit/build-angular:dev-server",
@@ -67,28 +80,17 @@
 						"browserTarget": "carbon-angular-starter:build"
 					}
 				},
-				"test": {
-					"builder": "@angular-devkit/build-angular:karma",
+				"e2e": {
+					"builder": "@cypress/schematic:cypress",
 					"options": {
-						"main": "src/test.ts",
-						"karmaConfig": "./karma.conf.js",
-						"polyfills": "src/polyfills.ts",
-						"tsConfig": "src/tsconfig.spec.json",
-						"scripts": [],
-						"styles": ["src/styles.scss"],
-						"assets": [
-							"src/favicon.ico"
-						]
-					}
-				},
-				"lint": {
-					"builder": "@angular-devkit/build-angular:tslint",
-					"options": {
-						"tsConfig": [
-							"src/tsconfig.app.json",
-							"src/tsconfig.spec.json"
-						],
-						"exclude": ["**/node_modules/**/*"]
+						"devServerTarget": "carbon-angular-starter:serve",
+						"watch": true,
+						"headless": false
+					},
+					"configurations": {
+						"production": {
+							"devServerTarget": "carbon-angular-starter:serve:production"
+						}
 					}
 				}
 			}
@@ -99,23 +101,41 @@
 			"projectType": "application",
 			"architect": {
 				"e2e": {
-					"builder": "@angular-devkit/build-angular:protractor",
+					"builder": "@cypress/schematic:cypress",
 					"options": {
-						"protractorConfig": "./protractor.conf.js",
-						"devServerTarget": "carbon-angular-starter:serve"
+						"devServerTarget": "carbon-angular-starter-e2e:serve",
+						"watch": true,
+						"headless": false
+					},
+					"configurations": {
+						"production": {
+							"devServerTarget": "carbon-angular-starter-e2e:serve:production"
+						}
 					}
 				},
-				"lint": {
-					"builder": "@angular-devkit/build-angular:tslint",
+				"cypress-run": {
+					"builder": "@cypress/schematic:cypress",
 					"options": {
-						"tsConfig": ["e2e/tsconfig.e2e.json"],
-						"exclude": ["**/node_modules/**/*"]
+						"devServerTarget": "carbon-angular-starter-e2e:serve",
+						"configFile": "e2e/cypress.config.ts"
+					},
+					"configurations": {
+						"production": {
+							"devServerTarget": "carbon-angular-starter-e2e:serve:production"
+						}
+					}
+				},
+				"cypress-open": {
+					"builder": "@cypress/schematic:cypress",
+					"options": {
+						"watch": true,
+						"headless": false,
+						"configFile": "e2e/cypress.config.ts"
 					}
 				}
 			}
 		}
 	},
-	"defaultProject": "carbon-angular-starter",
 	"schematics": {
 		"@schematics/angular:component": {
 			"prefix": "app",
